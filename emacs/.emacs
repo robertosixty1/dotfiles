@@ -7,6 +7,7 @@
 ;; autoload files
 
 (load-file "/home/syxarch/.emacs.d/lisp/lua-mode.el")
+(load-file "/home/syxarch/.emacs.d/lisp/porth-mode.el")
 
 ;; setup MELPA
 

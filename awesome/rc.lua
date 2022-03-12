@@ -150,7 +150,7 @@ awful.util.terminal = terminal
 --awful.util.tagnames = { "⌘", "♐", "⌥", "ℵ" }
 --awful.util.tagnames = { "www", "edit", "gimp", "inkscape", "music" }
 -- Use this : https://fontawesome.com/cheatsheet
-awful.util.tagnames = { "  ", "  ", "  ", "  ", " ⠐ ", " ⠡ " }
+awful.util.tagnames = { "  ", "  ", "  ", "  ", "  ", " ⠐ ", " ⠡ " }
 awful.layout.suit.tile.left.mirror = true
 awful.layout.layouts = {
     awful.layout.suit.tile,

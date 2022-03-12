@@ -1,0 +1,4 @@
+function addtopath()
+{
+    echo "PATH=\$PATH:$1" >> ~/.bashrc-personal
+}

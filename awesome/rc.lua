@@ -1,6 +1,9 @@
 --[[
-
-     
+   _____   _____  ___
+   ||-||   | ___| /|| RobertoSixty1's awesome config file
+   ||  ||  |___ |  ||
+   ||-||    __| |  || Github: https://github.com/robertohermenegildodias
+   ||  ||  |____|  || 
 
 --]]
 

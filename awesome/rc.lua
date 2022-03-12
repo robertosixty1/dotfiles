@@ -112,10 +112,10 @@ awful.spawn.with_shell(
 
 -- keep themes in alfabetical order for ATT
 local themes = {
-    "blackburn",		-- 1
+    "blackburn",        -- 1
     "copland",      	-- 2
-    "multicolor",	 	-- 3
-    "powerarrow",		-- 4
+    "multicolor",       -- 3
+    "powerarrow",       -- 4
     "powerarrow-blue",  -- 5
 }
 

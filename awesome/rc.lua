@@ -326,6 +326,11 @@ globalkeys = my_table.join(
     -- {{{ Personal keybindings
     awful.key({ modkey }, "w", function () awful.util.spawn( browser1 ) end,
         {description = browser1, group = "function keys"}),
+
+    -- zoom app, requires https://github.com/tsoding/boomer
+    awful.key({ modkey }, "z", function () awful.util.spawn( ".opt/boomer/boomer" ) end,
+        {description = "zoom app", group = "function keys"}),
+    
     -- dmenu
     awful.key({ modkey, "Shift"   }, "d",
     function ()

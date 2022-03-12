@@ -2,3 +2,4 @@ function addtopath()
 {
     echo "PATH=\$PATH:$1" >> ~/.bashrc-personal
 }
+PATH=$PATH:/home/syxarch/.opt/boomer/

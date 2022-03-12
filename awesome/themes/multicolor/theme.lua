@@ -3,6 +3,8 @@
      Multicolor Awesome WM theme 2.0
      github.com/lcpz
 
+     theme.fg_focus by https://github.com/robertohermenegildodias
+
 --]]
 
 local gears = require("gears")
@@ -26,7 +28,7 @@ theme.bg_normal                                 = "#000000"
 theme.bg_focus                                  = "#000000"
 theme.bg_urgent                                 = "#000000"
 theme.fg_normal                                 = "#aaaaaa"
-theme.fg_focus                                  = "#ff8c00"
+theme.fg_focus                                  = "#00ffc3"
 theme.fg_urgent                                 = "#af1d18"
 theme.fg_minimize                               = "#ffffff"
 theme.border_width                              = dpi(2)

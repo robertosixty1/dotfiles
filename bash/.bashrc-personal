@@ -5,5 +5,7 @@ function addtopath()
 
 function changeBright()
 {
+    # IMPORTANT! - LVDS1 is only for my laptop! For you, you
+    # can get this information with xrandr
     xrandr --output LVDS1 --brightness $1
 }

@@ -2,5 +2,8 @@ function addtopath()
 {
     echo "PATH=\$PATH:$1" >> ~/.bashrc-personal
 }
-PATH=$PATH:/home/syxarch/.opt/boomer/
-PATH=$PATH:/home/syxarch/.opt/porth/
+
+function changeBright()
+{
+    xrandr --output LVDS1 --brightness $1
+}

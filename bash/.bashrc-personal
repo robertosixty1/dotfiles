@@ -15,3 +15,4 @@ PATH=$PATH:/home/syxarch/.opt/porth/
 PATH=$PATH:/home/syxarch/.opt/boomer/
 PATH=$PATH:/home/syxarch/.opt/ascii-image-converter/
 PATH=$PATH:/home/syxarch/.opt/godot/
+PATH=$PATH:/home/syxarch/.opt/syfetch/

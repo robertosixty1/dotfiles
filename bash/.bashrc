@@ -322,3 +322,5 @@ alias personal='cp -Rf /personal/* ~'
 #sysinfo-retro
 #cpufetch
 #colorscript random
+
+syfetch # This just show the distro logo. Created by me

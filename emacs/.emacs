@@ -32,6 +32,3 @@
    '(markdown-mode linum-relative ample-theme lua-mode csharp-mode)))
 (custom-set-faces)
 
-;; key bindings
-
-(global-set-key "\C-c\C-d" "\C-a\C- \C-n\M-w\C-y")

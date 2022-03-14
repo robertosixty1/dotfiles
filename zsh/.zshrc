@@ -1,3 +1,11 @@
+#   _____   _____  ___
+#   ||-||   | ___| /|| RobertoSixty1's customized ArcoLinux zsh config file
+#   ||  ||  |___ |  ||
+#   ||-||    __| |  || Github: https://github.com/robertohermenegildodias
+#   ||  ||  |____|  || 
+#
+
+
 ###
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH

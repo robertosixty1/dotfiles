@@ -1,3 +1,10 @@
+;;   _____   _____  ___
+;;   ||-||   | ___| /|| RobertoSixty1's emacs config file
+;;   ||  ||  |___ |  ||
+;;   ||-||    __| |  || Github: https://github.com/robertohermenegildodias
+;;   ||  ||  |____|  || 
+
+
 ;; simplify GUI
 
 (menu-bar-mode 0)
@@ -6,25 +13,16 @@
 
 ;; autoload files
 
-(load-file "/home/syxarch/.emacs.d/lisp/lua-mode.el")
 (load-file "/home/syxarch/.emacs.d/lisp/porth-mode.el")
-;(load-file "/home/syxarch/.emacs.d/lisp/csharp-mode.el")
 
-;; setup MELPA
+;; setup MELPA and packages
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(wombat))
- '(package-selected-packages '(csharp-mode)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+ '(custom-enabled-themes '(ample))
+ '(custom-safe-themes
+   '("36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "c9ddf33b383e74dac7690255dd2c3dfa1961a8e8a1d20e401c6572febef61045" default))
+ '(package-selected-packages '(linum-relative ample-theme lua-mode csharp-mode)))
+(custom-set-faces)

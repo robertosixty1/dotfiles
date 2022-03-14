@@ -1,3 +1,11 @@
+#   _____   _____  ___
+#   ||-||   | ___| /|| RobertoSixty1's customized ArcoLinux bash config file
+#   ||  ||  |___ |  ||
+#   ||-||    __| |  || Github: https://github.com/robertohermenegildodias
+#   ||  ||  |____|  || 
+#
+
+
 ### EXPORT ###
 export EDITOR='emacs'
 export VISUAL='emacs'

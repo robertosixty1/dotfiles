@@ -131,9 +131,7 @@ fi
 ### ALIASES ###
 
 #list
-alias ls='ls --color=auto'
-alias la='ls -a'
-alias ll='ls -alFh'
+alias ls='ls --color=auto -lah'
 alias l='ls'
 alias l.="ls -A | egrep '^\.'"
 

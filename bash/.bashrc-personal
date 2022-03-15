@@ -1,5 +1,7 @@
 #!/bin/bash
 
+alias clear="clear && syfetch"
+
 function addtopath()
 {
     echo "PATH=\$PATH:$1" >> ~/.bashrc-personal

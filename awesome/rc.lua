@@ -130,7 +130,7 @@ local browser1          = "chromium"
 local browser2          = "firefox"
 local browser3          = "alacritty -e echo \"No third browser :D\" && read"
 local editor            = os.getenv("EDITOR") or "nano"
-local editorgui         = "gedit"
+local editorgui         = "notepadqq"
 local filemanager       = "pcmanfm" -- bacause thunar sucks
 local mailclient        = "alacritty -e echo \"Who needs an email client?\" && read"
 local mediaplayer       = "alacritty -e echo \"Who uses spotify?\" && read"
@@ -144,7 +144,7 @@ awful.util.terminal = terminal
 --awful.util.tagnames = { "⌘", "♐", "⌥", "ℵ" }
 --awful.util.tagnames = { "www", "edit", "gimp", "inkscape", "music" }
 -- Use this : https://fontawesome.com/cheatsheet
-awful.util.tagnames = { "  ", "  ", "  ", "  ", "  ", " ⠐ ", " ⠡ " }
+awful.util.tagnames = { "  ", "  ", "  ", "  ", "  ", " ⠐ ", " ⠡ ", " ⠲ " }
 awful.layout.suit.tile.left.mirror = true
 awful.layout.layouts = {
     awful.layout.suit.tile,

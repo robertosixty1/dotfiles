@@ -13,7 +13,7 @@
 
 ;; autoload files
 
-(load-file "/home/syxarch/.emacs.d/lisp/porth-mode.el")
+(load-file "/home/rosyx/.emacs.d/lisp/porth-mode.el")
 
 ;; setup themes
 

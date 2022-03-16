@@ -16,6 +16,8 @@
 #installation via paru -S oh-my-zsh-git
 export ZSH=/usr/share/oh-my-zsh/
 
+USE_OMZ=0
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -86,7 +88,9 @@ ZSH_THEME="random"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
+if [ "$USE_OMZ" = 1 ]; then
+    source $ZSH/oh-my-zsh.sh
+fi
 
 # User configuration
 

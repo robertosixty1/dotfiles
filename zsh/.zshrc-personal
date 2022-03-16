@@ -15,8 +15,8 @@ function changeBright()
     xrandr --output LVDS1 --brightness $1
 }
 
-PATH=$PATH:/home/syxarch/.opt/porth/
-PATH=$PATH:/home/syxarch/.opt/boomer/
-PATH=$PATH:/home/syxarch/.opt/ascii-image-converter/
-PATH=$PATH:/home/syxarch/.opt/godot/
-PATH=$PATH:/home/syxarch/.opt/syfetch/
+PATH=$PATH:/home/rosyx/.opt/porth/
+PATH=$PATH:/home/rosyx/.opt/boomer/
+PATH=$PATH:/home/rosyx/.opt/ascii-image-converter/
+PATH=$PATH:/home/rosyx/.opt/godot/
+PATH=$PATH:/home/rosyx/.opt/syfetch/

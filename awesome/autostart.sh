@@ -23,7 +23,7 @@ run volumeicon
 #run nitrogen --restore
 #run conky -c $HOME/.config/awesome/system-overview
 #you can set wallpapers in themes as well
-feh --bg-fill /usr/share/backgrounds/arcolinux/rocket-7680x4320.png &
+feh --bg-fill /usr/share/backgrounds/arcolinux-candy/candy-04.png &
 #run applications from startup
 #run firefox
 #run atom

@@ -38,3 +38,9 @@
  '(package-selected-packages
    '(nasm-mode rust-mode magit markdown-mode lua-mode csharp-mode)))
 (custom-set-faces)
+
+;; setup tabs
+
+(setq-default indent-tabs-mode t)
+(setq-default tab-width 4)
+(defvaralias 'c-basic-offset 'tab-width)

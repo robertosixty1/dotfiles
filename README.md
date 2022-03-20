@@ -4,7 +4,15 @@ This my repo for sharing my configuration files.
 
 ## Third-party requirements
 
-You will need to install [boomer](https://github.com/tsoding/boomer) to get an specific key binding working properly.
+You will need to install these packages to make some config files work properly:
+
+```
+    
+```
+[boomer](httṕs://github.com/tsoding/boomer)
+```
+ttc-iosevka
+``` 
 
 # IMPORTANT
 

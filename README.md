@@ -12,7 +12,7 @@ ArchLinux:
 ttc-iosevka
 ```
 
-Github:
+Github (put on your .opt folder):
 
 - [boomer](https://github.com/tsoding/boomer)
 

@@ -6,10 +6,15 @@ This my repo for sharing my configuration files.
 
 You will need to install these packages to make some config files work properly:
 
+ArchLinux:
+
 ```
-[boomer](https://github.com/tsoding/boomer)
 ttc-iosevka
-``` 
+```
+
+Github:
+
+- [boomer](https://github.com/tsoding/boomer)
 
 # IMPORTANT
 

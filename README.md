@@ -9,7 +9,7 @@ You will need to install these packages to make some config files work properly:
 ```
     
 ```
-[boomer](httṕs://github.com/tsoding/boomer)
+[boomer](https://github.com/tsoding/boomer)
 ```
 ttc-iosevka
 ``` 

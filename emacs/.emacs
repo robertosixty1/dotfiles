@@ -94,3 +94,7 @@
 
 (custom-set-faces)
 
+;; tabs or spaces
+
+(setq c-default-style "linux"
+      c-basic-offset 4)

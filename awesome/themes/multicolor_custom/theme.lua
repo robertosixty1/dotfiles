@@ -1,8 +1,9 @@
 --[[
 
-     Original multicolor Awesome WM theme by github.com/lcpz
+     Multicolor Awesome WM theme 2.0
+     github.com/lcpz
 
-     Customization by github.com/robertohermenegildodias
+     theme.fg_focus by https://github.com/robertohermenegildodias
 
 --]]
 
@@ -16,9 +17,7 @@ local os = os
 local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 
 local theme                                     = {}
-theme.confdir                                   = os.getenv("HOME") .. "/.config/awesome/themes/multicolor"
---theme.wallpaper                                 = theme.confdir .. "/wallpaper.jpg"
---theme.wallpaper                                 = "/usr/share/backgrounds/arcolinux/arco-wallpaper.jpg"
+theme.confdir                                   = os.getenv("HOME") .. "/.config/awesome/themes/multicolor_custom"
 theme.font                                      = "Noto Sans Regular 11"
 theme.taglist_font                              = "Noto Sans Regular 13"
 theme.menu_bg_normal                            = "#000000"
@@ -105,15 +104,6 @@ local clockicon = wibox.widget.imagebox(theme.widget_clock)
 local mytextclock = wibox.widget.textclock(markup("#7788af", "%a %d %b ") .. markup("#535f7a", ">") .. markup("#de5e1e", " %H:%M "))
 mytextclock.font = theme.font
 
--- Custom text
-
-local my_custom_text = wibox.widget{
-    markup = "<b>TODO:</b> ~/TODO.md   ",
-    align  = "center",
-    valign = "center",
-    widget = wibox.widget.textbox
-}
-
 -- Calendar
 theme.cal = lain.widget.cal({
     attach_to = { mytextclock },
@@ -127,7 +117,7 @@ theme.cal = lain.widget.cal({
 -- Weather
 local weathericon = wibox.widget.imagebox(theme.widget_weather)
 theme.weather = lain.widget.weather({
-    city_id = 2803138, -- placeholder (Belgium)
+    city_id = 3447186,
     notification_preset = { font = "Noto Sans Mono Medium 10", fg = theme.fg_normal },
     weather_na_markup = markup.fontfg(theme.font, "#eca4c4", "N/A "),
     settings = function()
@@ -313,14 +303,12 @@ function theme.at_screen_connect(s)
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
-            --s.mylayoutbox,
             s.mytaglist,
             s.mypromptbox,
         },
         --s.mytasklist, -- Middle widget
         nil,
         { -- Right widgets
-	    my_custom_text,
             layout = wibox.layout.fixed.horizontal,
             --mailicon,
             --mail.widget,
@@ -338,13 +326,14 @@ function theme.at_screen_connect(s)
             cpu.widget,
             --weathericon,
             --theme.weather.widget,
-            --tempicon,
+	    --tempicon,
             --temp.widget,
             --baticon,
             --bat.widget,
             clockicon,
             mytextclock,
             wibox.widget.systray(),
+	    s.mylayoutbox,
         },
     }
 end

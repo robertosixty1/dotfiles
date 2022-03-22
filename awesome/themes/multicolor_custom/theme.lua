@@ -21,11 +21,11 @@ theme.confdir                                   = os.getenv("HOME") .. "/.config
 --theme.wallpaper                                 = "/usr/share/backgrounds/arcolinux/arco-wallpaper.jpg"
 theme.font                                      = "Noto Sans Regular 11"
 theme.taglist_font                              = "Noto Sans Regular 13"
-theme.menu_bg_normal                            = "#0f0f0f"
-theme.menu_bg_focus                             = "#0f0f0f"
-theme.bg_normal                                 = "#0f0f0f"
-theme.bg_focus                                  = "#0f0f0f"
-theme.bg_urgent                                 = "#0f0f0f"
+theme.menu_bg_normal                            = "#000000"
+theme.menu_bg_focus                             = "#000000"
+theme.bg_normal                                 = "#000000"
+theme.bg_focus                                  = "#000000"
+theme.bg_urgent                                 = "#000000"
 theme.fg_normal                                 = "#aaaaaa"
 theme.fg_focus                                  = "#00ffc3"
 theme.fg_urgent                                 = "#af1d18"
@@ -108,7 +108,7 @@ mytextclock.font = theme.font
 -- Custom text
 
 local my_custom_text = wibox.widget{
-    markup = "<b>TODO:</b> ~/TODO.md",
+    markup = "<b>TODO:</b> ~/TODO.md   ",
     align  = "center",
     valign = "center",
     widget = wibox.widget.textbox

@@ -42,14 +42,6 @@ local dpi           = require("beautiful.xresources").apply_dpi
 
 -- {{{ My functions
 
-function bottom_bar_visibility()
-    for s in screen do
-        if s.mybottomwibox then
-            s.mybottomwibox.visible = not s.mybottomwibox.visible
-        end
-    end
-end
-
 function wibox_visibility()
    for s in screen do
       s.mywibox.visible = not s.mywibox.visible
@@ -60,8 +52,6 @@ function wibox_visibility()
 end
 
 -- }}}
-
-
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -114,7 +104,7 @@ awful.spawn.with_shell(
 -- {{{ Variable definitions
 
 -- choose your theme here
-local chosen_theme = "multicolor"
+local chosen_theme = "multicolor_custom"
 
 local theme_path = string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), chosen_theme)
 beautiful.init(theme_path)
@@ -268,18 +258,6 @@ awful.util.mymainmenu = freedesktop.menu.build({
 
 
 -- {{{ Screen
--- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
-screen.connect_signal("property::geometry", function(s)
-    -- Wallpaper
-    if beautiful.wallpaper then
-        local wallpaper = beautiful.wallpaper
-        -- If wallpaper is a function, call it with the screen
-        if type(wallpaper) == "function" then
-            wallpaper = wallpaper(s)
-        end
-        gears.wallpaper.maximized(wallpaper, s, true)
-    end
-end)
 
 -- No borders when rearranging only 1 non-floating or maximized client
 screen.connect_signal("arrange", function (s)
@@ -292,11 +270,12 @@ screen.connect_signal("arrange", function (s)
         end
     end
 end)
+
 -- Create a wibox for each screen and add it
 awful.screen.connect_for_each_screen(function(s) beautiful.at_screen_connect(s)
     s.systray = wibox.widget.systray()
     s.systray.visible = true
- end)
+  end)
 -- }}}
 
 
@@ -325,7 +304,7 @@ globalkeys = my_table.join(
     -- dmenu
     awful.key({ modkey, "Shift"   }, "d",
     function ()
-        awful.spawn(string.format("dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn NotoMonoRegular:bold:pixelsize=14",
+        awful.spawn(string.format("dmenu_run -i -nb '#191919' -nf '#00ffc3' -sb '#00ffc3' -sf '#191919' -fn NotoMonoRegular:bold:pixelsize=14",
         beautiful.bg_normal, beautiful.fg_normal, beautiful.bg_focus, beautiful.fg_focus))
 	end,
     {description = "show dmenu", group = "hotkeys"}),
@@ -1156,9 +1135,4 @@ awful.spawn.with_shell("picom -b --config  $HOME/.config/awesome/picom.conf")
 -- Comment or uncomment this line to show or hide
 -- the bar
 
--- wibox_visibility()
-
--- Comment or uncomment this line to show or hide
--- the bottom bar
-
-bottom_bar_visibility()
+--wibox_visibility()

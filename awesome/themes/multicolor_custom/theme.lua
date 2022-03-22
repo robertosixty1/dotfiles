@@ -1,9 +1,8 @@
 --[[
 
-     Multicolor Awesome WM theme 2.0
-     github.com/lcpz
+     Original multicolor Awesome WM theme by github.com/lcpz
 
-     theme.fg_focus by https://github.com/robertohermenegildodias
+     Customization by github.com/robertohermenegildodias
 
 --]]
 
@@ -22,11 +21,11 @@ theme.confdir                                   = os.getenv("HOME") .. "/.config
 --theme.wallpaper                                 = "/usr/share/backgrounds/arcolinux/arco-wallpaper.jpg"
 theme.font                                      = "Noto Sans Regular 11"
 theme.taglist_font                              = "Noto Sans Regular 13"
-theme.menu_bg_normal                            = "#000000"
-theme.menu_bg_focus                             = "#000000"
-theme.bg_normal                                 = "#000000"
-theme.bg_focus                                  = "#000000"
-theme.bg_urgent                                 = "#000000"
+theme.menu_bg_normal                            = "#0f0f0f"
+theme.menu_bg_focus                             = "#0f0f0f"
+theme.bg_normal                                 = "#0f0f0f"
+theme.bg_focus                                  = "#0f0f0f"
+theme.bg_urgent                                 = "#0f0f0f"
 theme.fg_normal                                 = "#aaaaaa"
 theme.fg_focus                                  = "#00ffc3"
 theme.fg_urgent                                 = "#af1d18"
@@ -103,8 +102,17 @@ local markup = lain.util.markup
 -- Textclock
 os.setlocale(os.getenv("LANG")) -- to localize the clock
 local clockicon = wibox.widget.imagebox(theme.widget_clock)
-local mytextclock = wibox.widget.textclock(markup("#7788af", "%A %d %B ") .. markup("#535f7a", ">") .. markup("#de5e1e", " %H:%M "))
+local mytextclock = wibox.widget.textclock(markup("#7788af", "%a %d %b ") .. markup("#535f7a", ">") .. markup("#de5e1e", " %H:%M "))
 mytextclock.font = theme.font
+
+-- Custom text
+
+local my_custom_text = wibox.widget{
+    markup = "<b>TODO:</b> ~/TODO.md",
+    align  = "center",
+    valign = "center",
+    widget = wibox.widget.textbox
+}
 
 -- Calendar
 theme.cal = lain.widget.cal({
@@ -312,6 +320,7 @@ function theme.at_screen_connect(s)
         --s.mytasklist, -- Middle widget
         nil,
         { -- Right widgets
+	    my_custom_text,
             layout = wibox.layout.fixed.horizontal,
             --mailicon,
             --mail.widget,
@@ -336,23 +345,6 @@ function theme.at_screen_connect(s)
             clockicon,
             mytextclock,
             wibox.widget.systray(),
-
-        },
-    }
-
-    -- Create the bottom wibox
-    s.mybottomwibox = awful.wibar({ position = "bottom", screen = s, border_width = 0, height = dpi(20), bg = theme.bg_normal, fg = theme.fg_normal })
-
-    -- Add widgets to the bottom wibox
-    s.mybottomwibox:setup {
-        layout = wibox.layout.align.horizontal,
-        { -- Left widgets
-            layout = wibox.layout.fixed.horizontal,
-        },
-        s.mytasklist, -- Middle widget
-        { -- Right widgets
-            layout = wibox.layout.fixed.horizontal,
-            s.mylayoutbox,
         },
     }
 end

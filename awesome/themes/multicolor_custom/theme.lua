@@ -22,11 +22,11 @@ theme.font                                      = "Noto Sans Regular 11"
 theme.taglist_font                              = "Noto Sans Regular 13"
 theme.menu_bg_normal                            = "#000000"
 theme.menu_bg_focus                             = "#000000"
-theme.bg_normal                                 = "#000000"
-theme.bg_focus                                  = "#000000"
-theme.bg_urgent                                 = "#000000"
+theme.bg_normal                                 = "#0f0f0f"
+theme.bg_focus                                  = "#1a8c8c"
+theme.bg_urgent                                 = "#a03929"
 theme.fg_normal                                 = "#aaaaaa"
-theme.fg_focus                                  = "#00ffc3"
+theme.fg_focus                                  = "#d6f4fc"
 theme.fg_urgent                                 = "#af1d18"
 theme.fg_minimize                               = "#ffffff"
 theme.border_width                              = dpi(2)
@@ -101,7 +101,7 @@ local markup = lain.util.markup
 -- Textclock
 os.setlocale(os.getenv("LANG")) -- to localize the clock
 local clockicon = wibox.widget.imagebox(theme.widget_clock)
-local mytextclock = wibox.widget.textclock(markup("#7788af", "%a %d %b ") .. markup("#535f7a", ">") .. markup("#de5e1e", " %H:%M "))
+local mytextclock = wibox.widget.textclock(markup("#7788af", "%a %d %b ") .. markup("#7788af", "|") .. markup("#7788af", " %H:%M "))
 mytextclock.font = theme.font
 
 -- Calendar
@@ -215,7 +215,7 @@ local netupinfo = lain.widget.net({
             theme.weather.update()
         end
 
-        widget:set_markup(markup.fontfg(theme.font, "#e54c62", net_now.sent .. " "))
+        widget:set_markup(markup.fontfg(theme.font, "#ea6b70", net_now.sent .. " "))
         netdowninfo:set_markup(markup.fontfg(theme.font, "#87af5f", net_now.received .. " "))
     end
 })
@@ -314,10 +314,10 @@ function theme.at_screen_connect(s)
             --mail.widget,
             --mpdicon,
             --theme.mpd.widget,
-            netdownicon,
-            netdowninfo,
-            netupicon,
-            netupinfo.widget,
+            --netdownicon,
+            --netdowninfo,
+            --netupicon,
+            --netupinfo.widget,
             volicon,
             theme.volume.widget,
             memicon,

@@ -22,7 +22,7 @@ theme.font                                      = "Noto Sans Regular 11"
 theme.taglist_font                              = "Noto Sans Regular 13"
 theme.menu_bg_normal                            = "#000000"
 theme.menu_bg_focus                             = "#000000"
-theme.bg_normal                                 = "#0f0f0f"
+theme.bg_normal                                 = "#0f0f0f50"
 theme.bg_focus                                  = "#02d2f2"
 theme.bg_urgent                                 = "#a03929"
 theme.fg_normal                                 = "#bababa"
@@ -332,7 +332,7 @@ function theme.at_screen_connect(s)
             --bat.widget,
             clockicon,
             mytextclock,
-            wibox.widget.systray(),
+            mysystray,
 	    s.mylayoutbox,
         },
     }

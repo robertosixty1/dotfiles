@@ -332,7 +332,7 @@ function theme.at_screen_connect(s)
             --bat.widget,
             clockicon,
             mytextclock,
-            mysystray,
+	    wibox.widget.systray(),
 	    s.mylayoutbox,
         },
     }

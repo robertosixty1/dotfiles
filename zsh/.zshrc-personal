@@ -15,9 +15,22 @@ function changeBright()
     xrandr --output LVDS1 --brightness $1
 }
 
+function set_random_wallpaper {
+	for x in ~/Pictures/wallpapers/*; do
+		var=$RANDOM
+		var=$[ 0 + $var % (1 + 1 - 0) ]
+		if [ "$var" = "1" ]; then
+			feh --bg-fill $x &
+			break
+		fi
+	done
+}
+
+
 ### ALIASES ###
 
 alias nano="echo \"ERROR: could not open nano: normie editor detected\""
+alias cls="clear"
 
 PATH=$PATH:/home/rosyx/.opt/porth/
 PATH=$PATH:/home/rosyx/.opt/boomer/

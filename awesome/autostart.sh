@@ -1,10 +1,21 @@
 #!/bin/bash
 
 function run {
-  if ! pgrep $1 ;
-  then
-    $@&
-  fi
+    if ! pgrep $1 ;
+    then
+        $@&
+    fi
+}
+
+function set_random_wallpaper {
+    for x in ~/Pictures/wallpapers/*; do
+	var=$RANDOM
+	var=$[ 0 + $var % (1 + 1 - 0) ]
+	if [ "$var" = "1" ]; then
+	    feh --bg-fill $x &
+	    break
+	fi
+    done
 }
 
 run dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
@@ -22,8 +33,9 @@ run numlockx on
 run volumeicon
 #run nitrogen --restore
 #run conky -c $HOME/.config/awesome/system-overview
-#you can set wallpapers in themes as well
-feh --bg-fill /usr/share/backgrounds/arcolinux-candy/candy-04.png &
+
+set_random_wallpaper
+
 #run applications from startup
 #run firefox
 #run atom

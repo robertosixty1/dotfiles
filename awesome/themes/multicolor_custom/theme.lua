@@ -22,7 +22,7 @@ theme.font                                      = "Noto Sans Regular 11"
 theme.taglist_font                              = "Noto Sans Regular 13"
 theme.menu_bg_normal                            = "#000000"
 theme.menu_bg_focus                             = "#000000"
-theme.bg_normal                                 = "#0f0f0f50"
+theme.bg_normal                                 = "#000000"
 theme.bg_focus                                  = "#02d2f2"
 theme.bg_urgent                                 = "#a03929"
 theme.fg_normal                                 = "#bababa"
@@ -61,7 +61,7 @@ theme.taglist_squares_sel                       = theme.confdir .. "/icons/squar
 theme.taglist_squares_unsel                     = theme.confdir .. "/icons/square_b.png"
 theme.tasklist_plain_task_name                  = true
 theme.tasklist_disable_icon                     = true
-theme.useless_gap                               = 5
+theme.useless_gap                               = 0
 theme.layout_tile                               = theme.confdir .. "/icons/tile.png"
 theme.layout_tilegaps                           = theme.confdir .. "/icons/tilegaps.png"
 theme.layout_tileleft                           = theme.confdir .. "/icons/tileleft.png"
@@ -97,6 +97,14 @@ theme.titlebar_maximized_button_normal_active   = theme.confdir .. "/icons/title
 theme.titlebar_maximized_button_focus_active    = theme.confdir .. "/icons/titlebar/maximized_focus_active.png"
 
 local markup = lain.util.markup
+
+-- Text on the bar
+local mytextbox = wibox.widget{
+    markup = markup("#e07300", "CPU cores: -43287   ") .. markup("#eae604", "Tasks: ∞ "),
+    align  = "center",
+    valign = "center",
+    widget = wibox.widget.textbox
+}
 
 -- Textclock
 os.setlocale(os.getenv("LANG")) -- to localize the clock
@@ -296,7 +304,7 @@ function theme.at_screen_connect(s)
     s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, awful.util.tasklist_buttons)
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s, height = dpi(20), bg = theme.bg_normal, fg = theme.fg_normal })
+    s.mywibox = awful.wibar({ position = "bottom", screen = s, height = dpi(20), bg = theme.bg_normal, fg = theme.fg_normal })
 
     -- Add widgets to the wibox
     s.mywibox:setup {
@@ -318,6 +326,7 @@ function theme.at_screen_connect(s)
             --netdowninfo,
             --netupicon,
             --netupinfo.widget,
+	    mytextbox,
             volicon,
             theme.volume.widget,
             memicon,

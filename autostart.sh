@@ -46,4 +46,4 @@ set_random_wallpaper
 #run ckb-next -b
 #run discord
 #run telegram-desktop
-run python3 ~/.config/autostart.py
+python3 ~/.config/autostart.py &

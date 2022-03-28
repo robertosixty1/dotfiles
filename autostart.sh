@@ -33,6 +33,7 @@ run numlockx on
 run volumeicon
 #run nitrogen --restore
 #run conky -c $HOME/.config/awesome/system-overview
+picom --config ~/.config/awesome/picom.conf
 
 set_random_wallpaper
 

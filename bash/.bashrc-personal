@@ -16,14 +16,24 @@ function changeBright()
 }
 
 function set_random_wallpaper {
-	for x in ~/Pictures/wallpapers/*; do
-		var=$RANDOM
-		var=$[ 0 + $var % (1 + 1 - 0) ]
-		if [ "$var" = "1" ]; then
-			feh --bg-fill $x &
-			break
-		fi
-	done
+    wallpaper_s=~/.cache/set_random_wallpaper.py
+    cat <<EOF > ${wallpaper_s}
+import subprocess
+import os
+import random
+
+def set_random_wallpaper(path: str):
+    wallpapers = []
+    for (root, dirs, files) in os.walk(path):
+        for f in files:
+            fpath = os.path.join(root, f)
+            wallpapers.append(fpath)
+    subprocess.run(["feh", "--bg-fill", random.choice(wallpapers)])
+
+home = os.getenv("HOME")
+set_random_wallpaper(f"{home}/Pictures/wallpapers/")
+EOF
+    python3 ${wallpaper_s}
 }
 
 

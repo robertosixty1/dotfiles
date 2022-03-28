@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 alias clear="clear && syfetch"
 

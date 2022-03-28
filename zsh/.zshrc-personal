@@ -41,6 +41,7 @@ EOF
 
 alias nano="echo \"ERROR: could not open nano: normie editor detected\""
 alias cls="clear"
+alias vim="nvim"
 
 PATH=$PATH:/home/rosyx/.opt/porth/
 PATH=$PATH:/home/rosyx/.opt/boomer/

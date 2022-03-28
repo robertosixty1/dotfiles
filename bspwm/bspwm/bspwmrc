@@ -12,3 +12,4 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 ~/.config/autostart.sh &
+/usr/bin/polybar -c ~/.config/polybar/config.ini

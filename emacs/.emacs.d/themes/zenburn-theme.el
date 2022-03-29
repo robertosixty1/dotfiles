@@ -92,14 +92,14 @@ defining them in this alist."
 
 ;;; Color Palette
 
-(defvar zenburn-default-colors-alist
+(defvar zenburn-default-colors-alist ;; some colors was changed: zenburn-bg, zenburn-bg-1
   '(("zenburn-fg-1"     . "#656555")
     ("zenburn-fg-05"    . "#989890")
     ("zenburn-fg"       . "#DCDCCC")
     ("zenburn-fg+1"     . "#FFFFEF")
     ("zenburn-fg+2"     . "#FFFFFD")
     ("zenburn-bg-2"     . "#000000")
-    ("zenburn-bg-1"     . "#2B2B2B")
+    ("zenburn-bg-1"     . "#262626")
     ("zenburn-bg-08"    . "#303030")
     ("zenburn-bg-05"    . "#383838")
     ("zenburn-bg"       . "#353535")

@@ -44,7 +44,7 @@
  '(company-quickhelp-color-foreground "#DCDCCC")
  '(custom-enabled-themes '(zenburn))
  '(custom-safe-themes
-   '("3d2e532b010eeb2f5e09c79f0b3a277bfc268ca91a59cdda7ffd056b868a03bc" "de1bf2ed5e8ff97ce2d8f277f1d022a8a9141d5c7afe5248c5df077f30168a1b" "36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "c9ddf33b383e74dac7690255dd2c3dfa1961a8e8a1d20e401c6572febef61045" default))
+   '("ff891ce4cc6ef7e3f411048e192038971014738bf6009f6e5f16129388b458a5" "8c83536be9ad1f223d4c08e8ca93c64771da1d04ac673e0a5a2a08909ce17580" "3d2e532b010eeb2f5e09c79f0b3a277bfc268ca91a59cdda7ffd056b868a03bc" "de1bf2ed5e8ff97ce2d8f277f1d022a8a9141d5c7afe5248c5df077f30168a1b" "36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "c9ddf33b383e74dac7690255dd2c3dfa1961a8e8a1d20e401c6572febef61045" default))
  '(fci-rule-color "#383838")
  '(frame-brackground-mode 'dark)
  '(nrepl-message-colors

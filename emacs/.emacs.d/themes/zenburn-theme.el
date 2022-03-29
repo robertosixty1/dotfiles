@@ -102,7 +102,7 @@ defining them in this alist."
     ("zenburn-bg-1"     . "#2B2B2B")
     ("zenburn-bg-08"    . "#303030")
     ("zenburn-bg-05"    . "#383838")
-    ("zenburn-bg"       . "#3F3F3F")
+    ("zenburn-bg"       . "#353535")
     ("zenburn-bg+05"    . "#494949")
     ("zenburn-bg+1"     . "#4F4F4F")
     ("zenburn-bg+2"     . "#5F5F5F")

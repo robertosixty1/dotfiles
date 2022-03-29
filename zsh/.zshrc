@@ -437,7 +437,7 @@ alias personal='cp -Rf /personal/* ~'
 [[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
 
 # reporting tools - install when not installed
-#neofetch
+neofetch
 #screenfetch
 #alsi
 #paleofetch
@@ -452,4 +452,4 @@ alias personal='cp -Rf /personal/* ~'
 #cpufetch
 #colorscript random
 
-syfetch # tool created by me to show the distro logo https://github.com/robertohermenegildodias/syfetch
+#syfetch # tool created by me to show the distro logo https://github.com/robertohermenegildodias/syfetch

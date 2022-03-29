@@ -316,7 +316,7 @@ alias personal='cp -Rf /personal/* ~'
 [[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
 
 # reporting tools - install when not installed
-#neofetch
+neofetch
 #screenfetch
 #alsi
 #paleofetch
@@ -331,4 +331,4 @@ alias personal='cp -Rf /personal/* ~'
 #cpufetch
 #colorscript random
 
-syfetch # This just show the distro logo. Created by me
+#syfetch # This just show the distro logo. Created by me

@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-alias clear="clear && syfetch"
+alias clear="clear && neofetch"
 
 function addtopath()
 {

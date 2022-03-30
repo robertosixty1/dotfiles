@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: main
+# key: main
+# expand-env: ((yas-indent-line 'fixed))
+# --
+
+int main(int argc, char **argv)
+{
+    $1
+    return 0;
+}

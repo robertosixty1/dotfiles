@@ -50,7 +50,7 @@
  '(nrepl-message-colors
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   '(yasnippet yaml-mode gruber-darker-theme nasm-mode rust-mode magit markdown-mode lua-mode csharp-mode))
+   '(yasnippet-snippets yasnippet yaml-mode gruber-darker-theme nasm-mode rust-mode magit markdown-mode lua-mode csharp-mode))
  '(pdf-view-midnight-colors '("#DCDCCC" . "#383838"))
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map

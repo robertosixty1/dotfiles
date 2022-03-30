@@ -14,7 +14,7 @@
 #installation via script from github
 #export ZSH="/home/$USER/.oh-my-zsh"
 #installation via paru -S oh-my-zsh-git
-export ZSH=/usr/share/oh-my-zsh/
+export ZSH=~/.oh-my-zsh/
 
 USE_OMZ=1
 

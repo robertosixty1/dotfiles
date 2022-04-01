@@ -14,4 +14,4 @@ set number
 " setup lightline theme
 let g:lightline = {
         \ 'colorscheme': 'onedark',
-				\ }
+	\ }

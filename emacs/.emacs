@@ -80,10 +80,10 @@
  ;; If there is more than one, they won't work right.
  )
 
-;; tabs or spaces
+;;; tabs and spaces
 
-(setq indent-tabs-mode nil)
 (setq-default tab-width 4)
+(setq-default indent-tabs-mode nil)
 
 ;;; c-mode
 (setq-default c-basic-offset 4
@@ -95,7 +95,7 @@
                          (interactive)
                          (c-toggle-comment-style -1)))
 
-;; whitespace
+;;; whitespace
 
 (defun rc/set-up-whitespace-handling ()
   (interactive)

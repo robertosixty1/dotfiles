@@ -57,9 +57,3 @@
       c-basic-offset 4)
 (setq indent-tabs-mode nil)
 (setq-default tab-width 4)
-
-;; whitespace
-
-(setq whitespace-style (quote
-  (face space-mark tabs newline tab-mark)))
-(global-whitespace-mode 1)

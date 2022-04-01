@@ -55,9 +55,11 @@
 
 (setq c-default-style "linux"
       c-basic-offset 4)
+(setq indent-tabs-mode nil)
+(setq-default tab-width 4)
 
 ;; whitespace
 
 (setq whitespace-style (quote
-  (face spaces tabs newline space-mark tab-mark)))
+  (face space-mark tabs newline tab-mark)))
 (global-whitespace-mode 1)

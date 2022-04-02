@@ -124,3 +124,7 @@
 (setq whitespace-style
    (quote
     (face tabs spaces trailing space-before-tab newline indentation empty space-after-tab space-mark tab-mark)))
+
+;; yasnippets
+
+(yas-global-mode 1)

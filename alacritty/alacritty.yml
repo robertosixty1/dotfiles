@@ -111,25 +111,22 @@ window:
 font:
   # Normal (roman) font face
   normal:
-#    family: Bitstream Vera Sans Mono
-    family: Inconsolata
+    family: Iosevka
     style: Regular
 
   # Bold font face
   bold:
-#    family: Bitstream Vera Sans Mono
-    family: Inconsolata
+    family: Iosevka
     style: Bold
 
   # Italic font face
   italic:
-    family: Inconsolata
+    family: Iosevka
     style: Italic
 
   # Bold italic font face
   bold_italic:
-#    family: Bitstream Vera Sans Mono
-    family: Inconsolata
+    family: Iosevka
     style: Bold Italic
 
   # Point size

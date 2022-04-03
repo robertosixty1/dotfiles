@@ -6,6 +6,10 @@
 super + Return
 	alacritty
 
+# file manager
+super + shift + Return
+	pcmanfm
+
 # program launcher
 super + shift + d
 	dmenu_run

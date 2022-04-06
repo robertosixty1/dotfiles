@@ -3,7 +3,7 @@
    ||-||   | ___| /|| RobertoSixty1's awesome config file
    ||  ||  |___ |  ||
    ||-||    __| |  || Github: https://github.com/robertohermenegildodias
-   ||  ||  |____|  || 
+   ||  ||  |____|  ||
 
 --]]
 
@@ -46,7 +46,7 @@ function wibox_visibility()
    for s in screen do
       s.mywibox.visible = not s.mywibox.visible
       if s.mybottomwibox then
-	 s.mybottomwibox.visible = not s.mybottomwibox.visible
+     s.mybottomwibox.visible = not s.mybottomwibox.visible
       end
    end
 end
@@ -300,13 +300,13 @@ globalkeys = my_table.join(
     -- zoom app, requires https://github.com/tsoding/boomer
     awful.key({ modkey }, "z", function () awful.util.spawn( ".opt/boomer/boomer" ) end,
         {description = "zoom app", group = "function keys"}),
-    
+
     -- dmenu
     awful.key({ modkey, "Shift"   }, "d",
     function ()
         awful.spawn(string.format("dmenu_run -i -nb '#191919' -nf '#00ffc3' -sb '#00ffc3' -sf '#191919' -fn NotoMonoRegular:bold:pixelsize=14",
         beautiful.bg_normal, beautiful.fg_normal, beautiful.bg_focus, beautiful.fg_focus))
-	end,
+    end,
     {description = "show dmenu", group = "hotkeys"}),
 
     -- Function keys
@@ -784,7 +784,7 @@ clientkeys = my_table.join(
     awful.key({ modkey, "Shift"   }, "Left",   function (c) c:move_to_screen()               end,
               {description = "move to screen", group = "client"}),
     awful.key({ modkey, "Shift"   }, "Right",  function (c) c:move_to_screen()               end,
-              {description = "move to screen", group = "client"}),    
+              {description = "move to screen", group = "client"}),
     --awful.key({ modkey,           }, "t",      function (c) c.ontop = not c.ontop            end,
               --{description = "toggle keep on top", group = "client"}),
     awful.key({ modkey,           }, "n",
@@ -1044,15 +1044,15 @@ awful.rules.rules = {
 
           -- Floating clients but centered in screen
     { rule_any = {
-       	class = {
-       		"Polkit-gnome-authentication-agent-1",
-			"Arcolinux-calamares-tool.py"
-				},
-				},
-      	properties = { floating = true },
-	      	callback = function (c)
-    		  awful.placement.centered(c,nil)
-       		end }
+        class = {
+            "Polkit-gnome-authentication-agent-1",
+            "Arcolinux-calamares-tool.py"
+                },
+                },
+        properties = { floating = true },
+            callback = function (c)
+              awful.placement.centered(c,nil)
+            end }
 }
 -- }}}
 

@@ -133,8 +133,8 @@ super + shift + s
 	dunstify "SUS SUS SUS"
 
 # hour
-super + shift +n
-	NOT_TIME="$(date +'%I:%M')"; dunstify $NOT_TIME
+super + shift + z
+	NOT_TIME="$(date +'%T')"; dunstify $NOT_TIME
 
 # zoom app
 super + z

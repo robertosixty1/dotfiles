@@ -128,6 +128,14 @@ super + {Left,Down,Up,Right}
 # personal keybindings
 #
 
+# useless notification
+super + shift + s
+	dunstify "SUS SUS SUS"
+
+# hour
+super + shift +n
+	NOT_TIME="$(date +'%I:%M')"; dunstify $NOT_TIME
+
 # zoom app
 super + z
 	.opt/boomer/boomer &

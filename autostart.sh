@@ -21,8 +21,8 @@ run nm-applet
 run volumeicon
 #run nitrogen --restore
 #run conky -c $HOME/.config/awesome/system-overview
-picom --config ~/.config/awesome/picom.conf &
-pulseaudio --start &
+run picom --config ~/.config/awesome/picom.conf
+run pulseaudio --start
 
 #run applications from startup
 #run firefox

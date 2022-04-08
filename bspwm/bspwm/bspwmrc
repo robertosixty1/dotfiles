@@ -13,4 +13,5 @@ bspc config gapless_monocle       true
 bspc config focus_follows_pointer true
 
 ~/.config/autostart.sh &
-/usr/bin/polybar -c ~/.config/polybar/config.ini
+/usr/bin/dunst -conf ~/.config/dunst/dunstrc &
+/usr/bin/polybar -c ~/.config/polybar/config.ini &

@@ -19,8 +19,8 @@ export PAGER='most'
 #export XMODIFIERS=@im=dbus
 #export QT_IM_MODULE=ibus
 
-PS1='[\e[0;34m\u\e[m@\e[32m\h \e[36m\W\e[m]\$ '
-#PS1='[\u@\h \W]\$ '
+#PS1='[\e[0;34m\u\e[m@\e[32m\h \e[36m\W\e[m]\$ '
+PS1='[\u@\h \W]\$ '
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return

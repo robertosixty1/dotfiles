@@ -108,6 +108,7 @@ fi
 
 
 export PAGER='most'
+export TERMINAL='st'
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

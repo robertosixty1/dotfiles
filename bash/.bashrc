@@ -11,6 +11,7 @@ export EDITOR='vim'
 export VISUAL='emacs'
 export HISTCONTROL=ignoreboth:erasedups
 export PAGER='most'
+export TERMINAL='st'
 
 #Ibus settings if you need them
 #type ibus-setup in terminal to change settings and start the daemon

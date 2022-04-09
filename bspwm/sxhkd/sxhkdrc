@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	st
 
 # file manager
 super + shift + Return
@@ -12,7 +12,7 @@ super + shift + Return
 
 # program launcher
 super + shift + d
-	dmenu_run
+	rofi -show run
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -127,6 +127,10 @@ super + {Left,Down,Up,Right}
 #
 # personal keybindings
 #
+
+# switch windows
+super + w
+	rofi -show windowcd
 
 # useless notification
 super + shift + s

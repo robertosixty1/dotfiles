@@ -301,10 +301,10 @@ globalkeys = my_table.join(
     awful.key({ modkey }, "z", function () awful.util.spawn( ".opt/boomer/boomer" ) end,
         {description = "zoom app", group = "function keys"}),
 
-    -- dmenu
+    -- rofi
     awful.key({ modkey, "Shift"   }, "d",
     function ()
-        awful.spawn(string.format("dmenu_run -i -nb '#191919' -nf '#00ffc3' -sb '#00ffc3' -sf '#191919' -fn NotoMonoRegular:bold:pixelsize=14",
+        awful.spawn(string.format("rofi -show run",
         beautiful.bg_normal, beautiful.fg_normal, beautiful.bg_focus, beautiful.fg_focus))
     end,
     {description = "show dmenu", group = "hotkeys"}),

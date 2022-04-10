@@ -1,8 +1,9 @@
+;; -*- lexical-binding: t; -*-
 ;;   _____   _____  ___
 ;;   ||-||   | ___| /|| RobertoSixty1's emacs config file
 ;;   ||  ||  |___ |  ||
 ;;   ||-||    __| |  || Github: https://github.com/robertohermenegildodias
-;;   ||  ||  |____|  || 
+;;   ||  ||  |____|  ||
 
 
 ;; simplify GUI & appearance

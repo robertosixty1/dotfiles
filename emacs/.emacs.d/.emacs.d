@@ -1,0 +1,1 @@
+/home/rosyx/Programming/my/dotfiles/emacs/.emacs.d

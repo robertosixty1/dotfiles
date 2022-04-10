@@ -1,3 +1,5 @@
+*.orij
+*.rej
 *.o
 config.h
 st

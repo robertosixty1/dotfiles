@@ -53,3 +53,7 @@ if [ -d "`pwd`/bspwm" ]; then
 	./install.sh
 	cd  ..
 fi
+
+if [ ! -d "~/.config/rofi" ]; then
+	ln -sf "`pwd`/rofi" ~/.config/rofi
+fi

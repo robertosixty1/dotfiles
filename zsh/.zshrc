@@ -386,5 +386,3 @@ neofetch
 #sysinfo-retro
 #cpufetch
 #colorscript random
-
-#syfetch # tool created by me to show the distro logo https://github.com/robertohermenegildodias/syfetch

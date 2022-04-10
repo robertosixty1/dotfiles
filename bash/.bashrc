@@ -286,5 +286,3 @@ neofetch
 #sysinfo-retro
 #cpufetch
 #colorscript random
-
-#syfetch # This just show the distro logo. Created by me

@@ -6,12 +6,10 @@ if [ ! -d "~/.config/autostart.sh" ]; then
 fi
 
 if [ ! -d "~/.config/awesome" ]; then
-	mkdir -p ~/.config/awesome
 	ln -sf "`pwd`/awesome" ~/.config/awesome 
 fi
 
 if [ ! -d "~/.config/alacritty" ]; then
-	mkdir -p ~/.config/alacritty
 	ln -sf "`pwd`/alacritty" ~/.config/alacritty
 fi
 

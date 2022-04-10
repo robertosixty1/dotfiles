@@ -129,7 +129,7 @@ super + {Left,Down,Up,Right}
 #
 
 # switch windows
-super + w
+alt + Tab
 	rofi -show windowcd
 
 # useless notification

@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d "www" "edi" "mus" "fil" "img" "-1-" "-2-" "-3-" 
+bspc monitor -d "  " "  " "  " "  " "  " " ➊ " " ➋ " " ➌ " 
 
 bspc config border_width          2
 bspc config window_gap            7
@@ -14,4 +14,4 @@ bspc config focus_follows_pointer true
 
 ~/.config/autostart.sh &
 /usr/bin/dunst -conf ~/.config/dunst/dunstrc &
-/usr/bin/polybar -c ~/.config/polybar/config.ini &
+/usr/bin/polybar -c ~/.config/polybar/config.ini -r &

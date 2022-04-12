@@ -6,10 +6,11 @@ This my repo for sharing my configuration files.
 
 You will need to install these packages to make some config files work properly:
 
-ArchLinux:
+### ArchLinux:
 
 ```
 ttc-iosevka
+ttf-font-awesome
 ```
 
 Github (put on your .opt folder):

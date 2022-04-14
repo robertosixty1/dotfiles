@@ -43,6 +43,9 @@ alias nano="echo \"ERROR: could not open nano: normie editor detected\""
 alias cls="clear"
 alias vim="nvim"
 
+echo "( .-.)"
+echo "SEE TODO.md!"
+
 PATH=$PATH:/home/rosyx/.opt/porth/
 PATH=$PATH:/home/rosyx/.opt/boomer/
 PATH=$PATH:/home/rosyx/.opt/ascii-image-converter/

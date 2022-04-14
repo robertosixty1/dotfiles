@@ -50,7 +50,7 @@
  '(nrepl-message-colors
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   '(company gdscript-mode yasnippet-snippets yasnippet yaml-mode gruber-darker-theme nasm-mode rust-mode magit markdown-mode lua-mode csharp-mode))
+   '(multiple-cursors company gdscript-mode yasnippet-snippets yasnippet yaml-mode gruber-darker-theme nasm-mode rust-mode magit markdown-mode lua-mode csharp-mode))
  '(pdf-view-midnight-colors '("#DCDCCC" . "#383838"))
  '(vc-annotate-background "#262626")
  '(vc-annotate-color-map
@@ -129,3 +129,10 @@
 ;; yasnippets
 
 (yas-global-mode 1)
+
+;; multiple cursors
+
+(global-set-key (kbd "C-x RET RET") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)

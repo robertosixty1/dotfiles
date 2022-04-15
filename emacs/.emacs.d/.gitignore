@@ -1,5 +1,7 @@
 *~
+*autoloads.el
+*pkg.el
+*.elc
 .mc-lists.el
 auto-save-list
-elpa
 eshell

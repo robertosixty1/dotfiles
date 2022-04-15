@@ -1,0 +1,117 @@
+;; -*- lexical-binding: t; -*-
+;;   _____   _____  ___
+;;   ||-||   | ___| /|| RobertoSixty1's emacs config file
+;;   ||  ||  |___ |  ||
+;;   ||-||    __| |  || Github: https://github.com/robertohermenegildodias
+;;   ||  ||  |____|  ||
+
+
+;; simplify GUI & appearance
+
+(menu-bar-mode 0)
+(tool-bar-mode 0)
+(scroll-bar-mode 0)
+(column-number-mode 1)
+(show-paren-mode 1)
+(setq display-line-numbers-type 'relative)
+(setq inhibit-startup-screen t)
+
+(when (version<= "26.0.50" emacs-version)
+  (global-display-line-numbers-mode))
+
+(set-frame-font "Iosevka 12" nil t)
+
+;; packages
+
+(setq package-list '(multiple-cursors
+                     company
+                     gdscript-mode
+                     yasnippet-snippets
+                     yasnippet
+                     yaml-mode
+                     gruber-darker-theme
+                     nasm-mode
+                     rust-mode
+                     magit
+                     markdown-mode
+                     lua-mode
+                     csharp-mode
+                     ))
+
+(require 'package)
+(setq package-archives '(("elpa" . "http://tromey.com/elpa/")
+                         ("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("melpa" . "http://melpa.org/packages/")))
+(package-initialize)
+
+(unless package-archive-contents
+  (package-refresh-contents))
+
+(dolist (package package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
+
+;; autoload files
+
+(load-file "/home/rosyx/.emacs.d/lisp/porth-mode.el")
+
+;; setup themes
+
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+
+;;; tabs and spaces
+
+(setq-default tab-width 4)
+(setq-default indent-tabs-mode nil)
+
+;;; c-mode
+(setq-default c-basic-offset 4
+              c-default-style '((java-mode . "java")
+                                (awk-mode . "awk")
+                                (other . "bsd")))
+
+(add-hook 'c-mode-hook (lambda ()
+                         (interactive)
+                         (c-toggle-comment-style -1)))
+
+;;; whitespace
+
+(defun rc/set-up-whitespace-handling ()
+  (interactive)
+  (whitespace-mode 1)
+  (add-to-list 'write-file-functions 'delete-trailing-whitespace))
+
+(add-hook 'tuareg-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'c++-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'c-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'emacs-lisp-mode 'rc/set-up-whitespace-handling)
+(add-hook 'java-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'lua-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'rust-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'scala-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'markdown-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'haskell-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'python-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'erlang-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'asm-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'nasm-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'go-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'nim-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'yaml-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'porth-mode-hook 'rc/set-up-whitespace-handling)
+
+(setq whitespace-style
+   (quote
+    (face tabs spaces trailing space-before-tab newline indentation empty space-after-tab space-mark tab-mark)))
+
+;; yasnippets
+
+(yas-global-mode 1)
+
+;; multiple cursors
+
+(global-set-key (kbd "C-x RET RET") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)

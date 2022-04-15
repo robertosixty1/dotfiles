@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	/st.sh
+	$HOME/st.sh
 
 # file manager
 super + shift + Return
@@ -142,7 +142,7 @@ super + shift + z
 
 # zoom app
 super + z
-	.opt/boomer/boomer &
+	$HOME/.opt/boomer/boomer &
 
 # logout
 super + x

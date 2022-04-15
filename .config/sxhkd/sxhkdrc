@@ -4,11 +4,11 @@
 
 # terminal emulator
 super + Return
-	st
+	/st.sh
 
 # file manager
 super + shift + Return
-	pcmanfm
+	thunar
 
 # program launcher
 super + shift + d

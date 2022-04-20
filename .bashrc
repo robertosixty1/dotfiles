@@ -10,7 +10,7 @@
 export EDITOR='vim'
 export VISUAL='emacs'
 export HISTCONTROL=ignoreboth:erasedups
-export PAGER='most'
+export PAGER='less'
 export TERMINAL='st'
 
 #Ibus settings if you need them

@@ -107,7 +107,7 @@ fi
 # export ARCHFLAGS="-arch x86_64"
 
 
-export PAGER='most'
+export PAGER='less'
 export TERMINAL='st'
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

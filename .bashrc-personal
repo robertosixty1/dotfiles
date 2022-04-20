@@ -53,3 +53,4 @@ PATH=$PATH:/home/rosyx/.opt/godot/
 PATH=$PATH:/home/rosyx/.opt/syfetch/
 PATH=$PATH:/home/rosyx/.opt/mcpelauncher
 PATH=$PATH:/home/rosyx/.opt/cava
+PATH=$PATH:/home/rosyx/.opt/tlauncher

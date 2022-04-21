@@ -36,6 +36,7 @@
                      markdown-mode
                      lua-mode
                      csharp-mode
+                     go-mode
                      ))
 
 (require 'package)

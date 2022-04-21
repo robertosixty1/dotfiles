@@ -21,7 +21,7 @@ Github (put on your .opt folder):
 
 ## Distro
 
-These config files are used on my ArcoLinux installation, i DON'T TEST THESE CONFIG FILES ON ANY OTHER DISTRO and i'm NOT RESPONSIBLE FOR ANY DAMAGE caused on your WM Config.
+These config files are used on my [Arch Linux](https://archlinux.org/) installation, i DON'T TEST THESE CONFIG FILES ON ANY OTHER DISTRO and i'm NOT RESPONSIBLE FOR ANY DAMAGE caused on your WM Config.
 
 ## .bashrc-personal
 

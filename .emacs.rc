@@ -125,3 +125,7 @@
           (lambda ()
             (interactive)
             (company-mode 0)))
+
+;; duplicate line
+
+(global-set-key "\C-c\C-c\C-d" "\C-a\C- \C-n\M-w\C-y")

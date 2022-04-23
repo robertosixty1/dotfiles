@@ -3,6 +3,6 @@
 # key: assert
 # --
 if !($1) {
-	fmt.Errorf("Assertion Failed: $2")
+	fmt.Fprintf(os.Stderr, "Assertion Failed: $2")
     os.Exit(1)
 }

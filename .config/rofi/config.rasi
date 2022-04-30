@@ -1,4 +1,4 @@
-@theme "~/.config/rofi/onedark.rasi"
+@theme "~/.config/rofi/material.rasi"
 
 configuration {
   	modi: "windowcd,run";

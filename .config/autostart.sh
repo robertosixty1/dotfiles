@@ -33,4 +33,7 @@ run pulseaudio --start
 #run ckb-next -b
 #run discord
 #run telegram-desktop
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
 python3 ~/.config/autostart.py &

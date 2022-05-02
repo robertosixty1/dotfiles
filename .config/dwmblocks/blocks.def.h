@@ -2,8 +2,7 @@
 static const Block blocks[] = {
     /*Icon   Command                                                    Update Interval         Update Signal*/
     {" ", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",   30,                     0},
-    {" ", "date '+%m/%d/%y %R'",                                       60,                     0},
-    {" ", "awk -F\"[][]\" '/dB/ { print $2 }' <(amixer sget Master)",   5,                     0},
+    {" ", "date '+%m/%d/%y %R'",                                        1,                     0},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.

@@ -1796,12 +1796,20 @@ setup(void)
 	grabkeys();
 	focus(NULL);
 
-    pid_t pid = fork();
-    if (pid == 0) {
-        char* const args[] = {"/bin/sh", "-c", "~/.config/autostart.sh", NULL};
-        execvp(args[0], args);
-        exit(0);
-    }
+	char* const autostart[] = {"/bin/sh", "-c", "~/.config/autostart.sh", NULL};
+	char* const dwmblocks[] = {"/bin/sh", "-c", "dwmblocks", NULL};
+
+	pid_t pid1 = fork();
+	if (pid1 == 0) {
+		execvp(autostart[0], autostart);
+		exit(0);
+	}
+
+	pid_t pid2 = fork();
+	if (pid2 == 0) {
+		execvp(dwmblocks[0], dwmblocks);
+		exit(0);
+	}
 }
 
 

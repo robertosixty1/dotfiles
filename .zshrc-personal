@@ -43,6 +43,7 @@ alias nano="echo \"ERROR: could not open nano: normie editor detected\""
 alias cls="clear"
 alias vim="nvim"
 alias md="mkdir"
+alias emacs="emacsclient -c -a emacs"
 
 echo "( .-.)"
 echo "SEE TODO.md!"

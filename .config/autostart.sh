@@ -23,6 +23,7 @@ run volumeicon
 #run conky -c $HOME/.config/awesome/system-overview
 run picom --config ~/.config/awesome/picom.conf
 run pulseaudio --start
+run emacs --daemon
 
 #run applications from startup
 #run firefox

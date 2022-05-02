@@ -19,7 +19,7 @@
 (when (version<= "26.0.50" emacs-version)
   (global-display-line-numbers-mode))
 
-(set-frame-font "Iosevka 12" nil t)
+(add-to-list 'default-frame-alist '(font . "Iosevka 12"))
 
 ;; packages
 

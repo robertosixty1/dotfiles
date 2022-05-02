@@ -4,3 +4,4 @@
 *.orig
 .config/dwm/dwm
 .config/dwmblocks/dwmblocks
+.config/dwmblocks/blocks.h

@@ -24,6 +24,7 @@ run volumeicon
 run picom --config ~/.config/awesome/picom.conf
 run pulseaudio --start
 run emacs --daemon
+run python3 ~/.config/autostart.py
 
 #run applications from startup
 #run firefox
@@ -37,4 +38,3 @@ run emacs --daemon
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-python3 ~/.config/autostart.py &

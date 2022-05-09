@@ -29,6 +29,10 @@
 
 (defconst no-mode-syntax-table
   (with-syntax-table (copy-syntax-table)
+    ;; C/C++ style comments
+    (modify-syntax-entry ?/ ". 124b")
+    (modify-syntax-entry ?* ". 23")
+    (modify-syntax-entry ?\n "> b")
     ;; Chars are the same as strings
     (modify-syntax-entry ?' "\"")
     (syntax-table))
@@ -36,7 +40,7 @@
 
 (eval-and-compile
   (defconst no-keywords
-    '("if" "else" "end" "while" "do" "macro")))
+    '("if" "else" "end" "while" "do" "macro" "include")))
 
 (defconst no-highlights
   `((,(regexp-opt no-keywords 'symbols) . font-lock-keyword-face)))

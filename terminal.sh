@@ -1,5 +1,7 @@
-st -e tmux a
+terminal=alacritty
+
+$terminal -e tmux a
 
 if [ $? = 1 ]; then
-	st -e tmux
+	$terminal -e tmux
 fi

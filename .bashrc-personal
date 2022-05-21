@@ -44,6 +44,7 @@ alias cls="clear"
 alias vim="nvim"
 alias md="mkdir"
 alias emacs="emacsclient -c -a emacs"
+alias hiy="git"
 
 echo "( .-.)"
 echo "SEE TODO.md!"

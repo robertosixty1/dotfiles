@@ -1,4 +1,4 @@
-@theme "~/.config/rofi/material.rasi"
+@theme "~/.config/rofi/breeze-dark.rasi"
 
 configuration {
   	modi: "windowcd,run";

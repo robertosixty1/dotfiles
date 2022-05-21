@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	$HOME/st.sh
+	$HOME/terminal.sh
 
 # file manager
 super + shift + Return

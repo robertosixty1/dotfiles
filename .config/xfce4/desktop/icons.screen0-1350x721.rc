@@ -1,13 +1,13 @@
 [xfdesktop-version-4.10.3+-rcfile_format]
 4.10.3+=true
 
+[/home/rosyx/Desktop/terminal.desktop]
+row=0
+col=7
+
 [/home/rosyx/Desktop/computer.desktop]
 row=0
 col=6
-
-[/home/rosyx/Desktop/xfce4-terminal-emulator.desktop]
-row=0
-col=7
 
 [/]
 row=0

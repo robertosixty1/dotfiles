@@ -1,6 +1,6 @@
 #! /bin/sh
 
-bspc monitor -d "  " "  " "  " "  " "  " " ➊ " " ➋ " " ➌ " 
+bspc monitor -d "" "" "" "" "" "➊" "➋" "➌"
 
 bspc config border_width          1
 bspc config window_gap            5

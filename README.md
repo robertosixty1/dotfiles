@@ -30,6 +30,7 @@ network-manager-applet
 htop
 mplayer
 feh
+polybar
 ```
 
 Github (put on your .opt folder):

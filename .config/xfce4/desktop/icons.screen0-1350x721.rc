@@ -2,14 +2,18 @@
 4.10.3+=true
 
 [/home/rosyx/Desktop/computer.desktop]
-row=2
-col=0
+row=0
+col=6
+
+[/home/rosyx/Desktop/xfce4-terminal-emulator.desktop]
+row=0
+col=7
 
 [/]
-row=1
-col=0
+row=0
+col=5
 
 [/home/rosyx]
 row=0
-col=0
+col=4
 

@@ -8,7 +8,7 @@ super + Return
 
 # file manager
 super + shift + Return
-	pcmanfm
+	thunar
 
 # program launcher
 super + shift + d

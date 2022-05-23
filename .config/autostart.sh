@@ -22,7 +22,6 @@ run volumeicon
 #run nitrogen --restore
 #run conky -c $HOME/.config/awesome/system-overview
 run picom --config ~/.config/awesome/picom.conf
-run pulseaudio --start
 run emacs --daemon
 run python3 ~/.config/autostart.py
 

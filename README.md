@@ -9,8 +9,29 @@ You will need to install these packages to make some config files work properly:
 ### ArchLinux:
 
 ```
-ttc-iosevka
+emacs
+neovim
+xfce4
+xfce4-whiskermenu-plugin
+bspwm
+sxhkd
 ttf-font-awesome
+ttc-iosevka
+base-devel
+jre-openjdk
+firefox
+go
+rustup
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+rofi
+dunst
+volumeicon
+network-manager-applet
+htop
+mplayer
+feh
 ```
 
 Github (put on your .opt folder):

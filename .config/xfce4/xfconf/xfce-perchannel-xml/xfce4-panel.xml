@@ -49,6 +49,9 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="wi-fi network connection “roberto 1” active: roberto (70%)"/>
+        <value type="string" value="wi-fi network connection “roberto 1” active: roberto (72%)"/>
         <value type="string" value="wi-fi network connection “roberto 1” active: roberto (63%)"/>
         <value type="string" value="wi-fi network connection “roberto 1” active: roberto (65%)"/>
         <value type="string" value="wi-fi network connection “roberto 1” active: roberto (56%)"/>

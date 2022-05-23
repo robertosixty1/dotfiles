@@ -11,8 +11,6 @@ You will need to install these packages to make some config files work properly:
 ```
 emacs
 neovim
-xfce4
-xfce4-whiskermenu-plugin
 bspwm
 sxhkd
 ttf-font-awesome

@@ -1,7 +1,5 @@
 emacs
 neovim
-xfce4
-xfce4-whiskermenu-plugin
 bspwm
 sxhkd
 ttf-font-awesome

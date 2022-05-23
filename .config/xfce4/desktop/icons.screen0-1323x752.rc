@@ -2,14 +2,14 @@
 4.10.3+=true
 
 [/home/rosyx/Desktop/computer.desktop]
-row=3
-col=0
+row=0
+col=11
 
 [/]
-row=0
-col=0
+row=1
+col=11
 
 [/home/rosyx]
-row=1
-col=0
+row=2
+col=11
 

@@ -58,6 +58,9 @@
         <value type="string" value="wi-fi network connection “roberto 1” active: roberto (52%)"/>
         <value type="string" value="volumeicon"/>
       </property>
+      <property name="known-items" type="array">
+        <value type="string" value="SimpleScreenRecorder"/>
+      </property>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-10" type="string" value="notification-plugin"/>

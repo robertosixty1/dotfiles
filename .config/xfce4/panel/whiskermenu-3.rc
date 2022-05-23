@@ -1,5 +1,5 @@
 favorites=xfce4-web-browser.desktop,xfce4-mail-reader.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop
-recent=xfce4-terminal-emulator.desktop
+recent=xfce4-web-browser.desktop,gimp.desktop,htop.desktop,xfce-backdrop-settings.desktop,simplescreenrecorder.desktop,boomer.desktop,xfce4-terminal-emulator.desktop,xfce4-terminal.desktop,xfce4-mail-reader.desktop,qv4l2.desktop
 button-icon=archlinux-logo
 button-single-row=false
 show-button-title=false

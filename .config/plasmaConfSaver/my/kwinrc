@@ -11,3 +11,6 @@ Rows=1
 
 [Plugins]
 overviewEnabled=true
+
+[org.kde.kdecoration2]
+ButtonsOnLeft=

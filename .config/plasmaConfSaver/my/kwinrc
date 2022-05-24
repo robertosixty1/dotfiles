@@ -6,8 +6,11 @@ OpenGLIsUnsafe=false
 
 [Desktops]
 Id_1=88d73db7-e074-4e9a-9771-aef305b5f515
-Number=1
-Rows=1
+Id_2=33949d75-1651-473d-8966-734d40380e15
+Id_3=0cfb3834-ce6a-494f-8e6f-f7d906faa898
+Id_4=8c9af2ca-4079-4dcf-86bf-798b35d2eb67
+Number=4
+Rows=2
 
 [Plugins]
 overviewEnabled=true

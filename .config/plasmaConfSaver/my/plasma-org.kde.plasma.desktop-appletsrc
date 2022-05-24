@@ -46,7 +46,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][14][Configuration]
-PreloadWeight=18
+PreloadWeight=23
 
 [Containments][2][Applets][15]
 immutability=1
@@ -60,14 +60,14 @@ immutability=1
 plugin=com.pajuelo.plasmaConfSaver
 
 [Containments][2][Applets][17][Configuration]
-PreloadWeight=69
+PreloadWeight=89
 
 [Containments][2][Applets][3]
 immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][2][Applets][3][Configuration]
-PreloadWeight=97
+PreloadWeight=100
 
 [Containments][2][Applets][3][Configuration][ConfigDialog]
 DialogHeight=540
@@ -103,7 +103,7 @@ plugin=org.kde.plasma.icontasks
 PreloadWeight=18
 
 [Containments][2][Applets][5][Configuration][General]
-launchers=applications:systemsettings.desktop,preferred://browser
+launchers=applications:systemsettings.desktop,preferred://browser,applications:org.kde.dolphin.desktop
 
 [Containments][2][Applets][6]
 immutability=1

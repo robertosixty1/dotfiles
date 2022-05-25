@@ -21,7 +21,11 @@ run nm-applet
 run volumeicon
 #run nitrogen --restore
 #run conky -c $HOME/.config/awesome/system-overview
-run picom --config ~/.config/awesome/picom.conf
+
+if ! pgrep "kwin" ; then
+	picom --config ~/.config/awesome/picom.conf &
+fi
+
 run emacs --daemon
 run python3 ~/.config/autostart.py
 

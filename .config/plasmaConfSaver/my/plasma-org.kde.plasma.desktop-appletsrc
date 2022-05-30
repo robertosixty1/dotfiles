@@ -30,7 +30,8 @@ positions={"1366x768":["1"\\,"12"\\,"desktop:/computer.desktop"\\,"0"\\,"0"]}
 sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/Next/contents/images/1366x768.jpg
+Image=file:///home/rosyx/Pictures/wallpapers/pexels-eberhard-grossgasteiger-1624496.jpg
+SlidePaths=/usr/share/wallpapers
 
 [Containments][2]
 activityId=
@@ -46,7 +47,11 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][14][Configuration]
-PreloadWeight=6
+PreloadWeight=4
+
+[Containments][2][Applets][14][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
 
 [Containments][2][Applets][15]
 immutability=1
@@ -60,7 +65,7 @@ immutability=1
 plugin=com.pajuelo.plasmaConfSaver
 
 [Containments][2][Applets][17][Configuration]
-PreloadWeight=45
+PreloadWeight=0
 
 [Containments][2][Applets][19][Configuration]
 PreloadWeight=92
@@ -70,7 +75,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][2][Applets][3][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 
 [Containments][2][Applets][3][Configuration][ConfigDialog]
 DialogHeight=540
@@ -120,7 +125,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][2][Applets][7][Configuration]
-PreloadWeight=5
+PreloadWeight=25
 SystrayContainmentId=8
 
 [Containments][2][ConfigDialog]
@@ -175,7 +180,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][8][Applets][16][Configuration]
-PreloadWeight=39
+PreloadWeight=0
 
 [Containments][8][Applets][9]
 immutability=1

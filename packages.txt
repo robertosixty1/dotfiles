@@ -20,3 +20,4 @@ htop
 mplayer
 feh
 polybar
+stow

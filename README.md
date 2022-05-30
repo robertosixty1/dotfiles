@@ -31,6 +31,7 @@ htop
 mplayer
 feh
 polybar
+stow
 ```
 
 Github (put on your .opt folder):

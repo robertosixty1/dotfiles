@@ -13,6 +13,7 @@ emacs
 neovim
 bspwm
 sxhkd
+picom
 ttf-font-awesome
 ttc-iosevka
 base-devel

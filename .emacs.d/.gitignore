@@ -5,3 +5,4 @@ transient
 .mc-lists.el
 auto-save-list
 eshell
+network-security.data

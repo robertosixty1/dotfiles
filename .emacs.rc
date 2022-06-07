@@ -68,6 +68,7 @@
 (setq-default indent-tabs-mode nil)
 
 ;;; c-mode
+
 (setq-default c-basic-offset 4
               c-default-style '((java-mode . "java")
                                 (awk-mode . "awk")
@@ -131,3 +132,7 @@
 ;; duplicate line
 
 (global-set-key "\C-c\C-c\C-d" "\C-a\C- \C-n\M-w\C-y")
+
+;; nasm mode
+
+(add-hook 'asm-mode-hook 'nasm-mode)

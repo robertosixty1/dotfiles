@@ -7,7 +7,6 @@ ttf-font-awesome
 ttc-iosevka
 base-devel
 jre-openjdk
-firefox
 go
 rustup
 noto-fonts

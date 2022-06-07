@@ -2,38 +2,21 @@
 
 This my repo for sharing my configuration files.
 
+## Quick Start
+
+This script only work on [Arch Linux](https://archlinux.org/).
+
+```console
+$ ./install.sh
+```
+
 ## Third-party requirements
 
 You will need to install these packages to make some config files work properly:
 
 ### ArchLinux:
 
-```
-emacs
-neovim
-bspwm
-sxhkd
-picom
-ttf-font-awesome
-ttc-iosevka
-base-devel
-jre-openjdk
-firefox
-go
-rustup
-noto-fonts
-noto-fonts-cjk
-noto-fonts-emoji
-rofi
-dunst
-volumeicon
-network-manager-applet
-htop
-mplayer
-feh
-polybar
-stow
-```
+See [packages.txt](./packages.txt) and [packages.yay.txt](./packages.yay.txt).
 
 Github (put on your .opt folder):
 

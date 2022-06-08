@@ -37,6 +37,7 @@
                      lua-mode
                      csharp-mode
                      go-mode
+                     rainbow-mode
                      ))
 
 (require 'package)

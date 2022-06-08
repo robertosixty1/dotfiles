@@ -38,6 +38,7 @@
                      csharp-mode
                      go-mode
                      rainbow-mode
+                     doom-themes
                      ))
 
 (require 'package)

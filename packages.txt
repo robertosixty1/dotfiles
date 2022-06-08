@@ -8,6 +8,7 @@ ttc-iosevka
 base-devel
 jre-openjdk
 go
+git
 rustup
 noto-fonts
 noto-fonts-cjk

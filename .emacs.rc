@@ -5,6 +5,9 @@
 ;;   ||-||    __| |  || Github: https://github.com/robertohermenegildodias
 ;;   ||  ||  |____|  ||
 
+;; make emacs stop asking about themes
+
+(setq custom-safe-themes t)
 
 ;; simplify GUI & appearance
 

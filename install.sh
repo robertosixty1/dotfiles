@@ -16,6 +16,9 @@ user="`basename $user`"
 
 pacman -Syu --needed --noconfirm -- < packages.txt
 
+systemctl enable cups.service
+systemctl start cups.service
+
 sudo -u $user git clone https://aur.archlinux.org/yay.git
 
 cd yay

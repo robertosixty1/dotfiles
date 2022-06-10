@@ -22,3 +22,5 @@ mplayer
 feh
 polybar
 stow
+cups
+system-config-printer

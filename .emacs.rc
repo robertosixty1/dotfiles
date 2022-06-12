@@ -62,6 +62,7 @@
 
 (load-file "/home/rosyx/.emacs.d/lisp/porth-mode.el")
 (load-file "/home/rosyx/.emacs.d/lisp/no-mode.el")
+(load-file "/home/rosyx/.emacs.d/lisp/simpc-mode.el")
 
 ;; setup themes
 
@@ -109,6 +110,7 @@
 (add-hook 'yaml-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'porth-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'no-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'simpc-mode 'rc/set-up-whitespace-handling)
 
 (setq whitespace-style
    (quote

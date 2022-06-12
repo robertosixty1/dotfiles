@@ -75,25 +75,21 @@
 
 ;;; c-mode
 
-(setq-default c-basic-offset 4
-              c-default-style '((java-mode . "java")
-                                (awk-mode . "awk")
-                                (other . "bsd")))
+(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
 (add-hook 'c-mode-hook (lambda ()
                          (interactive)
                          (c-toggle-comment-style -1)))
 
-;;; c mode
+(setq-default c-basic-offset 4
+              c-default-style '((java-mode . "java")
+                                (awk-mode . "awk")
+                                (other . "bsd")))
 
-(defun rc/set-up-c-mode ()
-  (interactive)
-  (simpc-mode)
-  (whitespace-mode 1)
-  (add-to-list 'write-file-functions 'delete-trailing-whitespace))
+;; emacs-lisp-mode
 
-(add-hook 'c-mode-hook 'rc/set-up-c-mode)
-(add-hook 'c++-mode-hook 'rc/set-up-c-mode)
+(add-to-list 'auto-mode-alist '("\\.el?\\'" . emacs-lisp-mode))
+(add-to-list 'auto-mode-alist '("\\.rc?\\'" . emacs-lisp-mode))
 
 ;;; whitespace
 
@@ -103,8 +99,9 @@
   (add-to-list 'write-file-functions 'delete-trailing-whitespace))
 
 (add-hook 'tuareg-mode-hook 'rc/set-up-whitespace-handling)
-(add-hook 'emacs-lisp-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'java-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'c-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'c++-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'lua-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'rust-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'scala-mode-hook 'rc/set-up-whitespace-handling)

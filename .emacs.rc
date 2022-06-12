@@ -42,6 +42,7 @@
                      go-mode
                      rainbow-mode
                      doom-themes
+                     astyle
                      ))
 
 (require 'package)
@@ -86,22 +87,11 @@
                                 (awk-mode . "awk")
                                 (other . "bsd")))
 
-(defun astyle-buffer (&optional justify)
-  (interactive)
-  (let ((saved-line-number (line-number-at-pos)))
-    (shell-command-on-region
-     (point-min)
-     (point-max)
-     "astyle --style=linux"
-     nil
-     t)
-    (goto-line saved-line-number)))
-
 (add-hook 'simpc-mode-hook
           (lambda ()
             (interactive)
             (setq-local fill-paragraph-function 'astyle-buffer)
-            (add-to-list 'write-file-functions 'astyle-buffer)))
+            (astyle-on-save-mode 1)))
 
 ;; emacs-lisp-mode
 

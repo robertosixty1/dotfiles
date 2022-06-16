@@ -19,6 +19,8 @@ pacman -Syu --needed --noconfirm -- < packages.txt
 systemctl enable cups.service
 systemctl start cups.service
 
+git clone https://github.com/ohmyzsh/ohmyzsh /home/$user/.oh-my-zsh
+
 sudo -u $user git clone https://aur.archlinux.org/yay.git
 
 cd yay

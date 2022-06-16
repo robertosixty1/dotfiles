@@ -24,3 +24,4 @@ polybar
 stow
 cups
 system-config-printer
+zsh

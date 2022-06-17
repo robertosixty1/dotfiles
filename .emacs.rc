@@ -155,4 +155,4 @@
 
 ;; nasm mode
 
-(add-hook 'asm-mode-hook 'nasm-mode)
+(add-to-list 'auto-mode-alist '("\\.asm?\\'" . nasm-mode))

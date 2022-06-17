@@ -1,4 +1,4 @@
-terminal=st
+terminal=alacritty
 
 $terminal -e tmux a
 

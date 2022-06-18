@@ -44,5 +44,8 @@ run python3 ~/.config/autostart.py
 #run discord
 #run telegram-desktop
 
-pgrep -x sxhkd > /dev/null || sxhkd &
-
+if pgrep "bspwm" ; then
+	sxhkd -c ~/.config/sxhkd/sxhkdrc.bspwm
+else
+	sxhkd -c ~/.config/sxhkd/sxhkdrc
+fi

@@ -18,11 +18,11 @@ local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 
 local theme                                     = {}
 theme.confdir                                   = os.getenv("HOME") .. "/.config/awesome/themes/multicolor_custom"
-theme.font                                      = "Noto Sans Regular 11"
-theme.taglist_font                              = "Noto Sans Regular 13"
+theme.font                                      = "Iosevka 11"
+theme.taglist_font                              = "Iosevka 13"
 theme.menu_bg_normal                            = "#000000"
 theme.menu_bg_focus                             = "#000000"
-theme.bg_normal                                 = "#0f0f0f99"
+theme.bg_normal                                 = "#0f0f0f"
 theme.bg_focus                                  = "#02d2f2"
 theme.bg_urgent                                 = "#a03929"
 theme.fg_normal                                 = "#bababa"
@@ -116,7 +116,7 @@ mytextclock.font = theme.font
 theme.cal = lain.widget.cal({
     attach_to = { mytextclock },
     notification_preset = {
-        font = "Noto Sans Mono Medium 10",
+        font = "Iosevka 10",
         fg   = theme.fg_normal,
         bg   = theme.bg_normal
     }
@@ -126,7 +126,7 @@ theme.cal = lain.widget.cal({
 --local weathericon = wibox.widget.imagebox(theme.widget_weather)
 theme.weather = lain.widget.weather({
     city_id = 3447186,
-    notification_preset = { font = "Noto Sans Mono Medium 10", fg = theme.fg_normal },
+    notification_preset = { font = "Iosevka 10", fg = theme.fg_normal },
     weather_na_markup = markup.fontfg(theme.font, "#eca4c4", "N/A "),
     settings = function()
         descr = weather_now["weather"][1]["description"]:lower()

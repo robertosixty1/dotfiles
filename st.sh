@@ -1,7 +1,7 @@
 terminal=alacritty
 
-$terminal -e tmux a
-
-if [ $? = 1 ]; then
+if pgrep "tmux" ; then
+	$terminal -e tmux a
+else
 	$terminal -e tmux
 fi

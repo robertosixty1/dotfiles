@@ -9,7 +9,7 @@ function run {
 
 function run_without_plasma {
     if ! pgrep "kwin" ; then
-        $@&
+        run $@
     fi
 }
 

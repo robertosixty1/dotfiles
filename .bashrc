@@ -10,7 +10,6 @@ export EDITOR='vim'
 export VISUAL='emacs'
 export HISTCONTROL=ignoreboth:erasedups
 export PAGER='less'
-export TERMINAL='st'
 
 #Ibus settings if you need them
 #type ibus-setup in terminal to change settings and start the daemon
@@ -169,9 +168,6 @@ alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+besta
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
 
-#iso and version used to install ArcoLinux
-alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
-
 #Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
@@ -270,18 +266,3 @@ alias personal='cp -Rf /personal/* ~'
 #in there. They will not be overwritten by skel.
 
 [[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
-
-# reporting tools - install when not installed
-neofetch
-#screenfetch
-#alsi
-#paleofetch
-#fetch
-#hfetch
-#sfetch
-#ufetch
-#pfetch
-#sysinfo
-#sysinfo-retro
-#cpufetch
-#colorscript random

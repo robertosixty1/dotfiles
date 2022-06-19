@@ -26,4 +26,4 @@ cups
 system-config-printer
 zsh
 i3-gaps
-i3status
+i3blocks

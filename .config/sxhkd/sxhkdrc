@@ -24,7 +24,7 @@ super + Escape
 
 # switch windows
 alt + Tab
-	rofi -show windowcd
+	dmenu_run
 
 # useless notification
 super + shift + s

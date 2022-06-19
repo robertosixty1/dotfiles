@@ -2,6 +2,7 @@
 *.o
 *.rej
 *.orig
+.config/autostart/autostart
 .config/dwm/dwm
 .config/dwmblocks/dwmblocks
 .config/dwmblocks/blocks.h

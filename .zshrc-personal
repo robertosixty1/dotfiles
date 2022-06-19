@@ -1,5 +1,3 @@
-#!/bin/zsh
-
 alias clear="clear && neofetch"
 
 function addtopath()
@@ -44,6 +42,7 @@ alias cls="clear"
 alias vim="nvim"
 alias md="mkdir"
 alias emacs="emacsclient -c -a emacs"
+alias demacs="/bin/emacs"
 alias hiy="git"
 
 echo "( .-.)"

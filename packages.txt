@@ -27,3 +27,4 @@ zsh
 i3-gaps
 i3blocks
 awesome
+pulseaudio

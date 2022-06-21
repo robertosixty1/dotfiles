@@ -9,7 +9,7 @@
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
 import:
-  - ~/.config/alacritty/doom_one.yml
+  - ~/.config/alacritty/doom_xcode.yml
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables

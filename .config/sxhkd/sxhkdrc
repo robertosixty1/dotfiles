@@ -8,7 +8,7 @@ super + Return
 
 # file manager
 super + shift + Return
-	dolphin
+	pcmanfm
 
 # program launcher
 super + shift + d

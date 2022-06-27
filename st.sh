@@ -1,4 +1,4 @@
-terminal=alacritty
+terminal=st
 
 if pgrep "tmux" ; then
 	$terminal -e tmux a

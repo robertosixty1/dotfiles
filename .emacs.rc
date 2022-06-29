@@ -43,6 +43,7 @@
                      rainbow-mode
                      doom-themes
                      astyle
+                     whitespace-cleanup-mode
                      ))
 
 (require 'package)
@@ -100,10 +101,12 @@
 
 ;;; whitespace
 
+(defconst USE-WHITESPACE 0)
+
 (defun rc/set-up-whitespace-handling ()
   (interactive)
-  (whitespace-mode 1)
-  (add-to-list 'write-file-functions 'delete-trailing-whitespace))
+  (when (= USE-WHITESPACE 1) (whitespace-mode 1))
+  (whitespace-cleanup-mode))
 
 (add-hook 'tuareg-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'java-mode-hook 'rc/set-up-whitespace-handling)

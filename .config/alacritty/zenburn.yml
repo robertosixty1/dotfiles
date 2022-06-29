@@ -1,0 +1,19 @@
+# Colors (Doom XCode)
+colors:
+  # Default colors
+  primary:
+    background: '#353535'
+    foreground: '#DCDCCC'
+
+  # Normal colors
+  normal:
+    black:   '#000000'
+    red:     '#ff0000'
+    green:   '#00ff11'
+    yellow:  '#eccf7b'
+    blue:    '#51afef'
+    magenta: '#c678dd'
+    cyan:    '#45c9ff'
+    white:   '#ffffff'
+  cursor:
+    background: '#DCDCCC'

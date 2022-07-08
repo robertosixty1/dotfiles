@@ -1,6 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
-#include "themes/zenburn.h"
+#include "themes/gruber-darker.h"
 
 /*
  * appearance

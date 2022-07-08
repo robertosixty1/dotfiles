@@ -65,6 +65,7 @@
 (load-file "/home/rosyx/.emacs.d/lisp/porth-mode.el")
 (load-file "/home/rosyx/.emacs.d/lisp/no-mode.el")
 (load-file "/home/rosyx/.emacs.d/lisp/simpc-mode.el")
+(load-file "/home/rosyx/.emacs.d/lisp/loisp-mode.el")
 
 ;; setup themes
 

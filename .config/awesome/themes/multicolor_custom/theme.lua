@@ -99,11 +99,12 @@ theme.titlebar_maximized_button_focus_active    = theme.confdir .. "/icons/title
 local markup = lain.util.markup
 
 -- Text on the bar
-local mytextbox = wibox.widget{
-   markup = markup("#e07300", "CPU cores: -43287   ") .. markup("#eae604", "Tasks: ∞ "),
+local text = wibox.widget{
+   markup = markup("#e07300", "CPU cores: -43287 ") .. markup("#eae604", "Tasks: ∞"),
    align  = "center",
    valign = "center",
-   widget = wibox.widget.textbox
+   widget = wibox.widget.textbox,
+   font = theme.font
 }
 
 -- Textclock
@@ -116,7 +117,7 @@ mytextclock.font = theme.font
 theme.cal = lain.widget.cal({
       attach_to = { mytextclock },
       notification_preset = {
-         font = "Iosevka 10",
+         font = theme.font,
          fg   = theme.fg_normal,
          bg   = theme.bg_normal
       }
@@ -126,7 +127,7 @@ theme.cal = lain.widget.cal({
 --local weathericon = wibox.widget.imagebox(theme.widget_weather)
 theme.weather = lain.widget.weather({
       city_id = 3447186,
-      notification_preset = { font = "Iosevka 10", fg = theme.fg_normal },
+      notification_preset = { font = theme.font, fg = theme.fg_normal },
       weather_na_markup = markup.fontfg(theme.font, "#eca4c4", "N/A "),
       settings = function()
          descr = weather_now["weather"][1]["description"]:lower()
@@ -326,7 +327,7 @@ function theme.at_screen_connect(s)
          --netdowninfo,
          --netupicon,
          --netupinfo.widget,
-         mytextbox,
+         text,
          volicon,
          theme.volume.widget,
          memicon,

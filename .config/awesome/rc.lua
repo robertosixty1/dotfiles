@@ -215,14 +215,6 @@ awful.screen.connect_for_each_screen(function(s) beautiful.at_screen_connect(s)
   end)
 -- }}}
 
--- {{{ Mouse bindings
-root.buttons(my_table.join(
-    awful.button({ }, 3, function () awful.util.mymainmenu:toggle() end)
-))
--- }}}
-
-
-
 -- {{{ Key bindings
 globalkeys = my_table.join(
     -- Hotkeys Awesome

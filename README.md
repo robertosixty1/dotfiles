@@ -18,7 +18,11 @@ You will need to install these packages to make some config files work properly:
 
 See [packages.txt](./packages.txt) and [packages.yay.txt](./packages.yay.txt).
 
-Github (put on your .opt folder):
+### Ubuntu
+
+See [packages.ubuntu.txt](./packages.ubuntu.txt).
+
+### Github
 
 - [boomer](https://github.com/tsoding/boomer)
 
@@ -26,8 +30,8 @@ Github (put on your .opt folder):
 
 ## Distro
 
-These config files are used on my [Arch Linux](https://archlinux.org/) installation, i DON'T TEST THESE CONFIG FILES ON ANY OTHER DISTRO and i'm NOT RESPONSIBLE FOR ANY DAMAGE caused on your WM Config.
+These config files are used on my [Arch Linux](https://archlinux.org/) installation, but they should also work on ubuntu.
 
 ## .bashrc-personal
 
-In the function ´changeBright´ on .bashrc-personal you will need to change to your display "name", that you can get from ´xrandr´.
+In the function `changeBright` on .bashrc-personal you will need to change to your display "name", that you can get from `xrandr`.

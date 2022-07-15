@@ -5,6 +5,21 @@ if [ "`id -u`" -ne "0" ]; then
     exit 1
 fi
 
+# check package manager
+IFS=':'
+found_pacman=0
+read -ra path <<< "$PATH"
+for val in "${path[@]}"; do
+    if [ -f "$val/pacman" ]; then
+        found_pacman=1
+        break
+    fi
+done
+if [ "$found_pacman" -ne "1" ]; then
+    echo "ERROR: Pacman package manager was not found" 1>&2
+    exit 1
+fi
+
 users=()
 
 for user in /home/*; do

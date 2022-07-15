@@ -6,6 +6,21 @@ if [ "`id -u`" -ne "0" ]; then
     exit 1
 fi
 
+# check package manager
+IFS=':'
+found_apt=0
+read -ra path <<< "$PATH"
+for val in "${path[@]}"; do
+    if [ -f "$val/apt" ]; then
+        found_apt=1
+        break
+    fi
+done
+if [ "$found_apt" -ne "1" ]; then
+    echo "ERROR: APT package manager was not found" 1>&2
+    exit 1
+fi
+
 # get user
 
 users=()

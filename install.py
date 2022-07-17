@@ -5,6 +5,13 @@ from os.path import isfile
 from subprocess import run
 from sys import stderr
 
+def run_cmd(args):
+    print("[CMD]", end='')
+    for a in args:
+        print(f" {a}", end='')
+    print('\n')
+    run(args)
+
 def get_programs_from_packagestxt(f):
     return open(f).read().split()
 
@@ -28,23 +35,23 @@ if not found_pacman:
 user = listdir("/home/")[0]
 
 # install programs
-run(["pacman", "-Syu", "--needed"] + get_programs_from_packagestxt("./packages.txt"))
+run_cmd(["pacman", "-Syu", "--needed"] + get_programs_from_packagestxt("./packages.txt"))
 
 # configure cups
-run(["systemctl", "enable", "cups.service"])
-run(["systemctl", "start", "cups.service"])
+run_cmd(["systemctl", "enable", "cups.service"])
+run_cmd(["systemctl", "start", "cups.service"])
 
 # configure oh my zsh
-run(["git", "clone", "https://github.com/ohmyzsh/ohmyzsh", f"/home/{user}/.oh-my-zsh"])
+run_cmd(["git", "clone", "https://github.com/ohmyzsh/ohmyzsh", f"/home/{user}/.oh-my-zsh"])
 
 # install yay
-run(["sudo", "-u", user, "git", "clone", "https://aur.archlinux.org/yay.git"])
+run_cmd(["sudo", "-u", user, "git", "clone", "https://aur.archlinux.org/yay.git"])
 chdir("yay")
-run(["sudo", "-u", user, "makepkg", "-si"])
+run_cmd(["sudo", "-u", user, "makepkg", "-si"])
 chdir("..")
 
 # install AUR packages
-run(["sudo", "-u", user, "yay", "-S", "--needed", "--noconfirm"] + get_programs_from_packagestxt("./packages.yay.txt"))
+run_cmd(["sudo", "-u", user, "yay", "-S", "--needed", "--noconfirm"] + get_programs_from_packagestxt("./packages.yay.txt"))
 
 # install configuration
-run(["sudo", "-u", user, "stow", "."])
+run_cmd(["sudo", "-u", user, "stow", "."])

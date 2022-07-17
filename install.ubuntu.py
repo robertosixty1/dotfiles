@@ -1,9 +1,16 @@
 #!/bin/env python3
 
-from os import getenv, listdir, chdir
-from os.path import isfile
+from os import getenv, listdir, chdir, walk
+from os.path import isfile, join, basename
 from subprocess import run
 from sys import stderr
+
+def run_cmd(args):
+    print("[CMD]", end='')
+    for a in args:
+        print(f" {a}", end='')
+    print('\n')
+    run(args)
 
 def get_programs_from_packagestxt(f):
     return open(f).read().split()
@@ -31,30 +38,39 @@ if not found_apt:
 user = listdir("/home/")[0]
 
 # install programs
-run(["apt", "install"] + get_programs_from_packagestxt("./packages.ubuntu.txt"))
+
+for p in get_programs_from_packagestxt("./packages.ubuntu.txt"):
+    expected = run_cmd(["apt", "install", p])
+    if expected.returncode != 0:
+        print(f"[WARN] APT could not install the package `{p}`, if you want it, install manually", file=stderr)
 
 # configure cups
-run(["systemctl", "enable", "cups.service"])
-run(["systemctl", "start", "cups.service"])
+run_cmd(["systemctl", "enable", "cups.service"])
+run_cmd(["systemctl", "start", "cups.service"])
 
 # configure oh my zsh
-run(["git", "clone", "https://github.com/ohmyzsh/ohmyzsh", f"/home/{user}/.oh-my-zsh"])
+run_cmd(["git", "clone", "https://github.com/ohmyzsh/ohmyzsh", f"/home/{user}/.oh-my-zsh"])
 
 # install configuration
-run(["sudo", "-u", user, "stow", "."])
+run_cmd(["sudo", "-u", user, "stow", "."])
 
 # install fonts
-run(["sudo", "-u", user, "wget", "https://github.com/be5invis/Iosevka/releases/download/v15.5.2/ttc-iosevka-15.5.2.zip"])
-run(["sudo", "-u", user, "unzip", "ttc-iosevka-15.5.2.zip", "-d", "iosevka"])
-run(["mv", "iosevka/*", "/usr/share/fonts/"])
-run(["fc-cache"])
+run_cmd(["sudo", "-u", user, "wget", "https://github.com/be5invis/Iosevka/releases/download/v15.5.2/ttc-iosevka-15.5.2.zip"])
+run_cmd(["sudo", "-u", user, "unzip", "ttc-iosevka-15.5.2.zip", "-d", "iosevka"])
+
+for d, fol, fls in walk("./iosevka/"):
+    for f in fls:
+        fil = join(d, f)
+        run_cmd(["mv", fil, "/usr/share/fonts/" + basename(fil)])
+
+run_cmd(["fc-cache"])
 
 # install rustup
-run(["sudo", "-u", user, "sh", "-c", "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh"])
+run_cmd(["sudo", "-u", user, "sh", "-c", "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh"])
 
 # install brave
-run(["apt", "install", "apt-transport-https", "curl"])
-run(["curl", "-fsSLo", "/usr/share/keyrings/brave-browser-archive-keyring.gpg", "https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg"])
-run(["sh", "-c", "echo \"deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main\" | tee /etc/apt/sources.list.d/brave-browser-release.list"])
-run(["apt", "update"])
-run(["apt", "install", "brave-browser"])
+run_cmd(["apt", "install", "apt-transport-https", "curl"])
+run_cmd(["curl", "-fsSLo", "/usr/share/keyrings/brave-browser-archive-keyring.gpg", "https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg"])
+run_cmd(["sh", "-c", "echo \"deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main\" | tee /etc/apt/sources.list.d/brave-browser-release.list"])
+run_cmd(["apt", "update"])
+run_cmd(["apt", "install", "brave-browser"])

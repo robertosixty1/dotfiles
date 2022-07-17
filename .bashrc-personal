@@ -42,6 +42,7 @@ alias md="mkdir"
 alias emacs="emacsclient -c -a emacs"
 alias demacs="/bin/emacs"
 alias hiy="git"
+alias last_installed="ls --time-style=+%d\ %b\ %G\ %H:%M -lct /etc | tail -1 | awk '{print \$6, \$7, \$8, \$9}'"
 
 echo "( .-.)"
 echo "SEE TODO.md!"

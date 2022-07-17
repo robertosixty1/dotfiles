@@ -10,7 +10,7 @@ def run_cmd(args):
     for a in args:
         print(f" {a}", end='')
     print('\n')
-    run(args)
+    return run(args)
 
 def get_programs_from_packagestxt(f):
     return open(f).read().split()

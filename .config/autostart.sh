@@ -7,8 +7,8 @@ function run {
     fi
 }
 
-function run_without_plasma {
-    if ! pgrep "kwin" ; then
+function run_without_de {
+    if ! pgrep "cinnamon" ; then
         run $@
     fi
 }
@@ -27,9 +27,9 @@ function run_without_plasma {
 #run conky -c $HOME/.config/awesome/system-overview
 run pulseaudio --start
 
-run_without_plasma picom --config ~/.config/awesome/picom.conf
-run_without_plasma volumeicon
-run_without_plasma nm-applet
+run_without_de picom --config ~/.config/awesome/picom.conf
+run_without_de volumeicon
+run_without_de nm-applet
 
 run emacs --daemon
 run python3 ~/.config/autostart.py

@@ -30,7 +30,7 @@ See [packages.ubuntu.txt](./packages.ubuntu.txt).
 
 ## Distro
 
-These config files are used on my [Arch Linux](https://archlinux.org/) installation, but they should also work on ubuntu.
+These config should work just fine on any debian based or arch based linux distro.
 
 ## .bashrc-personal
 

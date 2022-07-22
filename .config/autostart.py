@@ -14,4 +14,4 @@ def set_random_wallpaper(path: str):
 
 if __name__ == "__main__":
     home = os.getenv("HOME")
-    set_random_wallpaper(f"{home}/Pictures/wallpapers/")
+#    set_random_wallpaper(f"{home}/Pictures/wallpapers/")

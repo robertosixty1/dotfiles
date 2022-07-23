@@ -8,7 +8,7 @@ function run {
 }
 
 function run_without_de {
-    if ! pgrep "cinnamon" ; then
+    if ! pgrep "gnome-shell" ; then
         run $@
     fi
 }
